@@ -1,4 +1,4 @@
-const CACHE = 'ima-study-github-v4';
+const CACHE = 'ima-study-github-v5';
 const ASSETS = [
   './',
   './index.html',

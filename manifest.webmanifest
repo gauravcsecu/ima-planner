@@ -8,7 +8,7 @@
   "orientation": "portrait-primary",
   "background_color": "#f7f6fc",
   "theme_color": "#705bea",
-  "description": "Personal GATE 2027 study planner and revision dashboard.",
+  "description": "Personal GATE 2027 multi-stream study planner for CS/DA, ECE and EE.",
   "icons": [
     {
       "src": "./icon-192.png",

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>IMA Study — GATE 2027</title><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#705bea"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="IMA Study"><link rel="apple-touch-icon" href="./icon-192.png">
+<title>IMA Study — GATE 2027 · v8</title><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#705bea"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="IMA Study"><link rel="apple-touch-icon" href="./icon-192.png">
 <style>
 :root{--bg:#f7f6fc;--card:#fff;--soft:#eeeaff;--ink:#20213a;--muted:#8589a3;--line:#e8e5f2;--a:#705bea;--a2:#a174ff;--pink:#f08ac5;--blue:#63b8f4;--yellow:#f5c85b;--green:#55cfa4;--coral:#ff8f8f;--shadow:0 18px 50px rgba(74,61,145,.12);--r:22px}
 [data-theme=dark]{--bg:#0d0f18;--card:#151827;--soft:#24203e;--ink:#f6f6fb;--muted:#9a9eb5;--line:#292e43;--a:#9078ff;--a2:#b09cff;--pink:#ef91c7;--blue:#5fb7ff;--yellow:#f5c85b;--green:#55d9a8;--coral:#ff8f8f;--shadow:0 18px 55px rgba(0,0,0,.3)}
@@ -59,7 +59,7 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 [data-theme=night] .ey{color:#ffb087}
 [data-theme=night] .bar{background:#3b3037}
 [data-theme=night] .chk:checked{background:linear-gradient(135deg,#ff906c,#ffc267)}
-<style>
+
 .docsToolbar{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding:9px;border:1px solid var(--line);border-bottom:0;border-radius:14px 14px 0 0;background:linear-gradient(90deg,#f0edff,#fff1fa)}
 [data-theme=dark] .docsToolbar{background:#20243a}[data-theme=night] .docsToolbar{background:#302329}
 .docsToolbar button,.docsToolbar select,.docsToolbar label{height:32px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:5px 9px;font-size:11px}.docsToolbar button:hover{border-color:var(--a);color:var(--a)}.docsToolbar label{display:flex;align-items:center;gap:4px;font-weight:800}.docsToolbar input[type=color]{width:22px;height:22px;border:0;padding:0;border-radius:5px}
@@ -67,7 +67,40 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 @media(max-width:600px){.circleGauge{width:78px;height:78px}.docsEditor{min-height:330px}}
 
 .streamOverlay{position:fixed;inset:0;background:linear-gradient(135deg,#f4f0ff,#eafbf4 55%,#fff2f7);display:none;place-items:center;z-index:1000;padding:20px}.streamOverlay.open{display:grid}.streamBox{width:min(680px,100%);background:rgba(255,255,255,.94);border:1px solid #e4def8;border-radius:28px;padding:28px;box-shadow:0 25px 70px rgba(73,54,130,.18)}.streamBrand{font-weight:900;letter-spacing:2px;color:#705bea;font-size:13px}.streamBox h1{margin:8px 0 6px;font-size:30px}.streamBox p{color:#77718b;margin:0 0 20px}.streamGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.streamCard{border:1px solid #e2def2;background:#fff;border-radius:20px;padding:22px 15px;text-align:left;cursor:pointer;transition:.2s;box-shadow:0 8px 20px rgba(70,55,120,.07)}.streamCard:hover{transform:translateY(-4px);border-color:#705bea;box-shadow:0 14px 30px rgba(70,55,120,.13)}.streamCard b{display:block;font-size:22px;color:#342c56}.streamCard span{display:block;margin-top:5px;color:#817b92;font-size:12px}.streamCard .streamIcon{font-size:28px;margin-bottom:12px}.setupBack{border:0;background:none;color:#705bea;font-weight:800;cursor:pointer;margin-bottom:10px;padding:0}.branchSwitcher{margin-left:4px}.streamBadge{display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border-radius:999px;background:#eeeaff;color:#5a47c7;font-size:11px;font-weight:900;margin-top:7px}.streamNote{margin-top:16px;padding:11px 13px;border-radius:14px;background:#f7f5ff;color:#706b80;font-size:11px}@media(max-width:600px){.streamGrid{grid-template-columns:1fr}.streamBox{padding:22px;border-radius:22px}.streamBox h1{font-size:25px}}
-</style></style></head>
+
+/* v7 resource + missed goals */
+.missedCard{background:linear-gradient(145deg,#fff1f1,#fff9f9);border-color:#ffd6d6}.missedPill{background:#ffe0e0;color:#c84f5f}.missedCard .goal{background:linear-gradient(135deg,#ffe9e9,#fff5f5)!important;border-color:#ffd0d0!important}.goalMove{border:0;background:rgba(255,255,255,.72);color:#a14f5b;width:30px;height:28px;border-radius:9px;font-size:12px}.resourceToolbar{display:grid;gap:10px;margin-top:15px;padding:15px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,#f2efff,#eefbf7,#fff5f8)}.resourceFilters{display:grid;grid-template-columns:1fr 1fr 190px;gap:8px}.resourceInput{min-height:190px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;line-height:1.6}.resourceLibraryHead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}.resourceItem{margin-top:12px;padding:17px;border:1px solid var(--line);border-radius:20px;background:var(--card);box-shadow:var(--shadow)}.resourceItem.notes{background:linear-gradient(135deg,#f1edff,#fffafd)} .resourceItem.notes.shortNotes{background:linear-gradient(135deg,#fff6dc,#eefbf7)} .shortNoteWrap{padding:4px 0}.shortNoteWrap .prettyNote h1{font-size:22px}.shortNoteWrap .prettyNote h2{font-size:16px;margin:12px 0 6px;background:#fff0bf;color:#7b5b15}.shortNoteWrap .prettyNote p{font-size:12px}.shortNoteWrap .noteCallout{padding:9px 11px;margin:7px 0}.resourceItem.questions{background:linear-gradient(135deg,#eafaf5,#fffdf4)}.resourceMeta{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.resourceTag{font-size:9px;font-weight:900;padding:5px 8px;border-radius:99px;background:var(--soft);color:var(--a)}.resourceBody{margin-top:12px;line-height:1.7}.prettyNote h1,.prettyNote h2,.prettyNote h3{font-family:"Space Grotesk",system-ui}.prettyNote h1{font-size:27px;margin:4px 0 10px}.prettyNote h2{font-size:20px;margin:18px 0 7px;padding:7px 10px;border-radius:10px;background:#eeeaff;color:#5745ba}.prettyNote h3{font-size:16px;margin:14px 0 6px;color:#a14f8c}.prettyNote p{margin:7px 0}.prettyNote ul{padding-left:22px}.prettyNote .noteCallout{padding:11px 13px;margin:10px 0;border-radius:12px;background:linear-gradient(90deg,#fff3c9,#ffeaf4);border-left:4px solid var(--a)}.questionCard{padding:14px;margin-top:10px;border-radius:15px;background:rgba(255,255,255,.72);border:1px solid #dcefe7}.questionCard b.qnum{color:var(--a);font-size:10px}.options{display:grid;gap:6px;margin:9px 0}.option{padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.78);border:1px solid #e4e1ed}.answerBox{display:none;margin-top:9px;padding:9px 11px;border-radius:10px;background:#f0fbf6;color:#217e5d;font-size:12px}.answerBox.show{display:block}.packControls{display:flex;gap:8px;align-items:center;margin-top:13px}.packCard{margin-top:12px;padding:18px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(135deg,#f3efff,#fff7fb)}.packCard.question{background:linear-gradient(135deg,#eafbf5,#fff8ea)}.packCard .packType{font-size:9px;font-weight:900;color:var(--a);letter-spacing:.8px}.packCard h3{margin:6px 0 10px}.packAnswer{margin-top:12px}.packAnswer summary{cursor:pointer;font-weight:800;color:var(--a)}.emptyPack{padding:35px;text-align:center;color:var(--muted)}
+[data-theme=dark] .missedCard{background:linear-gradient(145deg,#26191e,#201820);border-color:#503039}. [data-theme=dark] .missedCard .goal{background:#24171b!important;border-color:#503039!important}. [data-theme=night] .missedCard{background:linear-gradient(145deg,#2b1c20,#21191d);border-color:#5a3840}. [data-theme=night] .missedCard .goal{background:#2a1b1f!important;border-color:#5a3840!important}. [data-theme=dark] .resourceToolbar{background:linear-gradient(135deg,#1d1930,#17252a,#2a1b26)} [data-theme=dark] .resourceItem.notes{background:#1c1930} [data-theme=dark] .resourceItem.notes.shortNotes{background:#302919} [data-theme=dark] .shortNoteWrap .prettyNote h2{background:#3b321f;color:#f5d98a} [data-theme=dark] .resourceItem.questions{background:#172822} [data-theme=dark] .prettyNote h2{background:#292347;color:#c8bbff}. [data-theme=night] .resourceToolbar{background:linear-gradient(135deg,#30202a,#203029,#302225)} [data-theme=night] .resourceItem.notes{background:#2b2230} [data-theme=night] .resourceItem.notes.shortNotes{background:#302a1e} [data-theme=night] .shortNoteWrap .prettyNote h2{background:#40351f;color:#f6d98b} [data-theme=night] .resourceItem.questions{background:#20302a}
+@media(max-width:650px){.resourceFilters{grid-template-columns:1fr}.resourceLibraryHead{align-items:flex-start;flex-direction:column}.resourceInput{min-height:160px}}
+
+.resourceActions{display:flex;gap:9px;flex-wrap:wrap}.resourceImportInfo{padding:11px 13px;border-radius:13px;background:rgba(255,255,255,.55);border:1px dashed var(--line);color:var(--muted);font-size:11px;line-height:1.55}.resourceItem .resourceImage{display:block;max-width:100%;max-height:360px;object-fit:contain;border-radius:14px;margin:12px 0;border:1px solid var(--line)}.resourceFormatPill{font-size:9px;font-weight:900;padding:5px 8px;border-radius:99px;background:#eeeaff;color:#5a47c7}.resourceSlides{display:grid;gap:12px}.resourceSlide{padding:15px;border-radius:16px;background:rgba(255,255,255,.62);border:1px solid var(--line)}.resourceSlide h3{margin:0 0 8px}.resourceSlide ul{margin:6px 0;padding-left:20px}.resourceSlide .slideFormula{padding:9px 11px;margin-top:8px;border-radius:10px;background:#fff4d6;font-family:ui-monospace,SFMono-Regular,monospace}.resourceImportToolbar{gap:12px}.resourceImportToolbar .resourceFilters{grid-template-columns:1fr 1fr 1fr}.resourceEmptyHint{padding:28px;text-align:center;color:var(--muted)}
+[data-theme=dark] .missedCard .goaltext{color:#f5e8e6}[data-theme=dark] .missedCard .goalmeta{color:#cbb8b8}[data-theme=dark] .missedCard .goalTypeBadge{background:#503039;color:#ffd8d5}[data-theme=dark] .missedCard .goalMove{background:#3a252b;color:#ffd0cc}
+[data-theme=night] .missedCard .goaltext{color:#ffe8e1}[data-theme=night] .missedCard .goalmeta{color:#d0b8b1}[data-theme=night] .missedCard .goalTypeBadge{background:#5a3840;color:#ffe0da}[data-theme=night] .missedCard .goalMove{background:#40272d;color:#ffd4ce}
+[data-theme=dark] .resourceImportInfo{background:#1d1930}[data-theme=night] .resourceImportInfo{background:#302329}
+@media(max-width:650px){.resourceImportToolbar .resourceFilters{grid-template-columns:1fr}.resourceActions{width:100%}.resourceActions .btn{flex:1}}
+.resourceTransferActions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.resourceTransferBtn{border:1px solid var(--line);border-radius:18px;padding:13px 14px;display:flex;align-items:center;gap:12px;text-align:left;cursor:pointer;box-shadow:0 8px 20px rgba(70,50,100,.08);transition:.2s;min-height:68px}
+.resourceTransferBtn:hover{transform:translateY(-2px);box-shadow:0 12px 25px rgba(70,50,100,.12)}
+.resourceTransferBtn .transferIcon{font-size:9px;font-weight:1000;letter-spacing:1px;padding:8px 9px;border-radius:10px;flex:0 0 auto}
+.resourceTransferBtn b{display:block;font-size:13px;color:#2f2940}.resourceTransferBtn small{display:block;margin-top:3px;font-size:9px;color:#756d83}
+.importBtn{background:linear-gradient(135deg,#eee9ff,#f9f5ff);border-color:#ddd3ff}.importBtn .transferIcon{background:#ddd3ff;color:#5a46bd}
+.exportBtn{background:linear-gradient(135deg,#e7fbf2,#fff7e9);border-color:#d2efdf}.exportBtn .transferIcon{background:#cceedd;color:#237e5d}
+[data-theme=dark] .resourceTransferBtn b,[data-theme=night] .resourceTransferBtn b{color:#f4eef8}
+[data-theme=dark] .resourceTransferBtn small,[data-theme=night] .resourceTransferBtn small{color:#b7aebd}
+[data-theme=dark] .importBtn{background:linear-gradient(135deg,#211b36,#29213d);border-color:#473b66}. [data-theme=dark] .exportBtn{background:linear-gradient(135deg,#172b24,#30271b);border-color:#365947}
+[data-theme=night] .importBtn{background:linear-gradient(135deg,#30202f,#28203a);border-color:#5a4058}. [data-theme=night] .exportBtn{background:linear-gradient(135deg,#1f3028,#35291d);border-color:#536247}
+.resourceFilterStatus{margin-top:10px;padding:10px 12px;border-radius:13px;background:linear-gradient(90deg,#f3efff,#eefbf7);font-size:10px;color:var(--muted);border:1px solid var(--line)}
+[data-theme=dark] .resourceFilterStatus{background:linear-gradient(90deg,#211b36,#172822)} [data-theme=night] .resourceFilterStatus{background:linear-gradient(90deg,#30202f,#203029)}
+@media(max-width:650px){.resourceTransferActions{grid-template-columns:1fr}.resourceActions{width:100%}.resourceTransferBtn{width:100%}}
+
+/* v12 resource quiz + revision pack UX */
+.resourceQuiz{margin-top:12px;padding:16px;border-radius:18px;background:linear-gradient(135deg,#f7f2ff,#eefbf7);border:1px solid var(--line)}
+.quizTop{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}.quizProgress{font-size:10px;font-weight:900;color:var(--muted)}
+.quizQ{font-size:15px;line-height:1.55;margin:12px 0}.quizOptions{display:grid;gap:8px}.quizOption{padding:11px 12px;border-radius:13px;border:1px solid var(--line);background:rgba(255,255,255,.72);cursor:pointer;font-weight:700;text-align:left}.quizOption:hover{transform:translateY(-1px)}.quizOption.selected{border-color:#8f78ef;box-shadow:0 0 0 2px rgba(143,120,239,.16)}.quizOption.correct{background:#e5f8ee!important;border-color:#78c99d!important;color:#176b47}.quizOption.wrong{background:#ffe8e8!important;border-color:#e99a9a!important;color:#9d3333}.quizFeedback{margin-top:10px;padding:10px 12px;border-radius:12px;font-size:12px;font-weight:800}.quizFeedback.ok{background:#e7f8ef;color:#1c7650}.quizFeedback.bad{background:#ffe8e8;color:#a13b43}.quizActions{display:flex;gap:8px;justify-content:space-between;align-items:center;margin-top:12px;flex-wrap:wrap}.quizFinish{padding:12px 14px;border-radius:14px;background:linear-gradient(135deg,#6e59df,#a16be8);color:white;border:0;font-weight:900}.quizScore{margin-top:14px;padding:15px;border-radius:16px;background:linear-gradient(135deg,#fff3c9,#ffeaf4);border:1px solid var(--line);text-align:center}.quizScore strong{font-size:26px}.quizFIB{width:100%;padding:11px;border-radius:12px;border:1px solid var(--line);background:var(--card);font:inherit}.packFilter{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.packFilter label{font-size:10px;font-weight:900;color:var(--muted)}
+[data-theme=dark] .resourceQuiz{background:linear-gradient(135deg,#211b36,#172822)}[data-theme=night] .resourceQuiz{background:linear-gradient(135deg,#30202f,#203029)}
+[data-theme=dark] .quizOption,[data-theme=night] .quizOption{background:#201c27;color:#f2edf5}[data-theme=dark] .quizScore,[data-theme=night] .quizScore{background:linear-gradient(135deg,#2d2738,#3a292e)}
+@media(max-width:650px){.quizActions{align-items:stretch}.quizActions .btn,.quizActions .quizFinish{flex:1}.packFilter{width:100%}}
+</style></head>
 <body>
 <div class="app">
 <aside class="side" id="side"><div class="brand">IMA <b>STUDY</b></div><nav class="nav">
@@ -75,6 +108,8 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <button data-v="syllabus"><span class="ico">◈</span> Full Syllabus</button>
 <button data-v="goals"><span class="ico">◎</span> Goals & Milestones</button>
 <button data-v="revision"><span class="ico">★</span> Revision & Bookmarks</button>
+<button data-v="resources"><span class="ico">📚</span> Resources <small style="font-size:9px;opacity:.65">CS/DA</small></button>
+<button data-v="pack"><span class="ico">🎲</span> Revision Pack</button>
 <button data-v="backup"><span class="ico">⇄</span> Backup & Offline</button>
 </nav><div class="sideTools"><button onclick="toggleDark()" id="themeBtn">☾ Dark mode</button><button onclick="toggleNight()" id="nightBtn">☼ Night study mode</button><button onclick="openStreamSwitcher()" class="branchSwitcher">⇄ Switch stream</button><button onclick="toggleSidebar()">☰ Menu</button></div></aside>
 
@@ -86,7 +121,8 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <div class="card stat"><div class="circleGauge blue" id="weekGauge"><span id="weekPct">0%</span></div><small>This week</small></div>
 <div class="card stat"><div class="circleGauge pink" id="allGauge"><span id="allPct">0%</span></div><small>Syllabus</small></div><div class="card stat"><small>Revision due</small><strong id="due">0</strong></div></div>
 <div class="grid two" style="margin-top:14px"><div class="card"><div class="head"><h2>Today's goals</h2><button class="btn" onclick="openGoalModal()">＋ Goal</button></div><div id="todayGoals"></div></div><div class="card"><div class="head"><h2>Track progress</h2><div class="trackToggle" role="tablist" aria-label="Progress period"><button id="trackTodayBtn" class="active" onclick="setTrackPeriod('today')">TODAY</button><button id="trackWeekBtn" onclick="setTrackPeriod('week')">WEEK</button></div></div><div class="progressGroup singleProgressGroup"><div class="progressMiniGrid" id="typeProgress"></div></div></div></div>
-<div class="card" style="margin-top:14px"><div class="head"><h2>Weekly goals</h2><span class="pill">MON → SUN</span></div><div id="weekGoals"></div></div></section>
+<div class="card" style="margin-top:14px"><div class="head"><h2>Weekly goals</h2><span class="pill">MON → SUN</span></div><div id="weekGoals"></div></div>
+<div class="card missedCard" style="margin-top:14px"><div class="head"><div><h2>Missed goals</h2><div class="hint">Incomplete goals whose date has passed. You can move them to a new date.</div></div><span class="pill missedPill" id="missedCount">0 missed</span></div><div id="missedGoals"></div></div></section>
 
 <section id="syllabus" class="view"><div class="card"><div class="head"><div><h2>Full syllabus</h2><div class="hint">Edit subjects, topics and mark revision priority.</div></div><button class="btn primary" onclick="openSubjectModal()">＋ Subject</button></div><div id="syllabusList"></div></div></section>
 
@@ -97,6 +133,36 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <div class="filterchips"><button class="chip" onclick="quickFilter(7)">Not opened 7d+</button><button class="chip" onclick="quickFilter(10)">Not opened 10d+</button><button class="chip" onclick="quickFilter(30)">Not opened 30d+</button><button class="chip" onclick="clearFilters()">Clear</button></div><div id="revisionList"></div></div></section>
 
 
+
+<section id="resources" class="view">
+<div class="card resourceOnlyCard" id="resourceApp">
+<div class="head"><div><h2>CS/DA Resource Library</h2><div class="hint">Import prepared learning packages. Resources are read-only inside IMA Study.</div></div><span class="pill">CS/DA ONLY</span></div>
+<div class="resourceToolbar resourceImportToolbar">
+<div class="resourceActions resourceTransferActions"><input id="resourcePackageFile" type="file" accept=".json,application/json" hidden onchange="importResourcePackage(this.files[0]);this.value=''">
+<button class="resourceTransferBtn importBtn" onclick="document.getElementById('resourcePackageFile').click()"><span class="transferIcon">IMPORT</span><span><b>Import Resources</b><small>Add a prepared resource package</small></span></button>
+<button class="resourceTransferBtn exportBtn" onclick="exportResourcePackage()"><span class="transferIcon">EXPORT</span><span><b>Export Resources</b><small>Export only the current filters</small></span></button></div>
+<div class="resourceFilters">
+<select id="resFilterSubject" onchange="resourceFilterSubjectChanged()"><option value="">All subjects</option></select>
+<select id="resFilterTopic" onchange="renderResources()"><option value="">All topics</option></select>
+<select id="resFilterType" onchange="renderResources()"><option value="">All resource types</option><option value="complete_notes">📝 Complete Notes</option><option value="short_notes">⚡ Short Notes</option><option value="slides">🎞️ 2–3 Slide Summary</option><option value="mcq">MCQ</option><option value="msq">MSQ</option><option value="fib">Fill in the Blank</option></select>
+</div>
+<div class="resourceFilterStatus" id="resourceFilterStatus">Showing all CS/DA resources · Export will include exactly what these filters show.</div>
+<div class="resourceImportInfo"><b>Read-only library:</b> Resources can only enter IMA Study through a prepared JSON package. You cannot manually add, edit or delete resources here.</div>
+</div>
+<div class="resourceLibraryHead"><div><h2>Your resources</h2><div class="hint" id="resourceCountHint">0 resources</div></div></div>
+<div id="resourceList"></div>
+</div>
+<div class="card resourceLocked" id="resourceLocked" style="display:none"><h2>Resources are currently for CS/DA</h2><p class="muted">Switch to CS/DA to access the resource library. ECE and EE data remain separate.</p><button class="btn primary" onclick="openStreamSwitcher()">⇄ Switch to CS/DA</button></div>
+</section>
+
+<section id="pack" class="view">
+<div class="card">
+<div class="head"><div><h2>🎲 Random Revision Pack</h2><div class="hint">A shuffled mini-pack from the CS/DA resources you added.</div></div><button class="btn primary" onclick="shufflePack()">↻ New pack</button></div>
+<div class="packControls"><div class="packFilter"><label>TYPE</label><select id="packType" onchange="shufflePack()"><option value="mcq">MCQ</option><option value="short_notes">Short Notes</option></select><select id="packSize" onchange="shufflePack()"><option value="5">5</option><option value="10" selected>10</option></select></div><span class="pill" id="packMeta">0 cards</span></div>
+<div id="packList"></div>
+</div>
+<div class="card resourceLocked" id="packLocked" style="display:none"><h2>Revision Pack is currently for CS/DA</h2><p class="muted">Add CS/DA resources first, then shuffle a fresh pack whenever you get bored.</p><button class="btn primary" onclick="openStreamSwitcher()">⇄ Switch to CS/DA</button></div>
+</section>
 
 <section id="backup" class="view">
 <div class="card">
@@ -114,6 +180,8 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <div id="setupOverlay" class="streamOverlay"><div class="streamBox"><div class="streamBrand">IMA STUDY · GATE 2027</div><div id="examStep"><h1>Choose your exam</h1><p>Select the exam you are preparing for.</p><div class="streamGrid" style="grid-template-columns:1fr"><button class="streamCard" onclick="chooseExam('GATE')"><div class="streamIcon">🎯</div><b>GATE</b><span>Graduate Aptitude Test in Engineering</span></button></div></div><div id="branchStep" style="display:none"><button class="setupBack" onclick="showExamStep()">← Change exam</button><h1>Choose your branch</h1><p>GATE 2027 syllabus dashboard</p><div class="streamGrid"><button class="streamCard" onclick="selectBranch('CSDA')"><div class="streamIcon">💻</div><b>CS/DA</b><span>Computer Science & Data Science</span></button><button class="streamCard" onclick="selectBranch('ECE')"><div class="streamIcon">📡</div><b>ECE</b><span>Electronics & Communication Engineering</span></button><button class="streamCard" onclick="selectBranch('EE')"><div class="streamIcon">⚡</div><b>EE</b><span>Electrical Engineering</span></button></div><div class="streamNote">Your study progress, goals, notes and bookmarks are stored separately for each branch.</div></div></div></div>
 <div id="goalModal" class="overlay"><div class="modal"><div class="head"><h2>Add goal</h2><button class="iconbtn" onclick="closeM('goalModal')">✕</button></div><div class="form" style="margin-top:15px"><label class="hint">Subject</label><select id="goalSubject" onchange="goalSubjectChanged()"></select><div id="otherSubjectBox" class="hidden"><input id="otherSubject" placeholder="New subject name"></div><label class="hint">Syllabus topic</label><select id="goalTopic"></select><div id="otherTopicBox" class="hidden"><input id="otherTopic" placeholder="New topic name"></div><div class="row"><input id="goalDate" type="date"><select id="goalType"><option>Study</option><option>Practice</option><option>Revision</option></select></div><div class="actions" style="justify-content:flex-end"><button class="btn" onclick="closeM('goalModal')">Cancel</button><button class="btn primary" onclick="saveGoal()">Add goal</button></div></div></div></div>
 
+<div id="dateModal" class="overlay"><div class="modal"><div class="head"><h2>Change goal date</h2><button class="iconbtn" onclick="closeM('dateModal')">✕</button></div><div class="form" style="margin-top:15px"><div id="dateGoalName" class="hint"></div><label class="hint">New date</label><input id="editGoalDate" type="date"><div class="actions" style="justify-content:flex-end"><button class="btn" onclick="closeM('dateModal')">Cancel</button><button class="btn primary" onclick="saveGoalDate()">Move goal</button></div></div></div></div>
+
 <div id="subjectModal" class="overlay"><div class="modal"><div class="head"><h2 id="subjectModalTitle">Add subject</h2><button class="iconbtn" onclick="closeM('subjectModal')">✕</button></div><div class="form" style="margin-top:15px"><input id="subjectName" placeholder="Subject name"><textarea id="subjectTopics" placeholder="Topics — one per line"></textarea><div class="actions" style="justify-content:flex-end"><button class="btn" onclick="closeM('subjectModal')">Cancel</button><button class="btn primary" onclick="saveSubject()">Save</button></div></div></div></div>
 
 <div id="planModal" class="overlay"><div class="modal"><div class="head"><h2>Create milestones</h2><button class="iconbtn" onclick="closeM('planModal')">✕</button></div><div class="form" style="margin-top:15px"><div class="row"><input id="planName" placeholder="Plan / subject"><input id="planDays" type="number" min="1" value="14"></div><textarea id="planTopics" placeholder="One topic per line"></textarea><div class="hint">Topics are distributed evenly across the selected days.</div><div class="actions" style="justify-content:flex-end"><button class="btn" onclick="closeM('planModal')">Cancel</button><button class="btn primary" onclick="savePlan()">Generate</button></div></div></div></div>
@@ -125,8 +193,8 @@ const PROFILE_KEY='ima-study-profile-v4';
 const LEGACY_KEY='ima-gate2027-v2-phase2';
 let profile=JSON.parse(localStorage.getItem(PROFILE_KEY)||'null')||{exam:null,branch:null};
 function branchStorageKey(branch){return 'ima-study-gate2027-'+branch+'-v4'}
-function makeDb(dataset){return {subjects:Object.fromEntries(Object.entries(dataset).map(([s,a])=>[s,a.map(t=>({title:t,done:false}))])),goals:[],plans:[],bookmarks:{},notes:[],theme:'light'}}
-function normalizeDb(x,dataset){let d=x&&typeof x==='object'?x:makeDb(dataset);if(!d.subjects)d.subjects={};if(!d.goals)d.goals=[];if(!d.plans)d.plans=[];if(!d.bookmarks)d.bookmarks={};if(!d.notes)d.notes=[];if(!d.theme)d.theme='light';return d}
+function makeDb(dataset){return {subjects:Object.fromEntries(Object.entries(dataset).map(([s,a])=>[s,a.map(t=>({title:t,done:false}))])),goals:[],plans:[],bookmarks:{},notes:[],resources:[],theme:'light'}}
+function normalizeDb(x,dataset){let d=x&&typeof x==='object'?x:makeDb(dataset);if(!d.subjects)d.subjects={};if(!d.goals)d.goals=[];if(!d.plans)d.plans=[];if(!d.bookmarks)d.bookmarks={};if(!d.notes)d.notes=[];if(!d.resources)d.resources=[];if(!d.performance||typeof d.performance!=='object')d.performance={quizAttempts:[],resourceScores:{},packScores:[]};if(!Array.isArray(d.performance.quizAttempts))d.performance.quizAttempts=[];if(!d.performance.resourceScores||typeof d.performance.resourceScores!=='object')d.performance.resourceScores={};if(!Array.isArray(d.performance.packScores))d.performance.packScores=[];if(!d.theme)d.theme='light';return d}
 // Preserve the previously deployed CS/DA data and move it into its branch-specific store once.
 if(!localStorage.getItem(branchStorageKey('CSDA'))&&localStorage.getItem(LEGACY_KEY)){localStorage.setItem(branchStorageKey('CSDA'),localStorage.getItem(LEGACY_KEY));}
 if(!profile.branch&&localStorage.getItem(branchStorageKey('CSDA'))){profile={exam:'GATE',branch:'CSDA'};localStorage.setItem(PROFILE_KEY,JSON.stringify(profile));}
@@ -162,7 +230,7 @@ function applyTheme(){
 function toggleDark(){db.theme=db.theme==='dark'?'light':'dark';save()}
 function toggleNight(){db.theme=db.theme==='night'?'light':'night';save()}
 function toggleSidebar(){document.getElementById('side').classList.toggle('closed')}function toggleMobile(){document.getElementById('side').classList.toggle('mobileOpen')}
-function show(id,b){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(b)b.classList.add('active');document.getElementById('pageTitle').textContent={dashboard:'Your command center.',syllabus:'Full syllabus.',goals:'Milestone planner.',revision:'Revision queue.',backup:'Backup & offline.'}[id];render()}
+function show(id,b){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(b)b.classList.add('active');document.getElementById('pageTitle').textContent={dashboard:'Your command center.',syllabus:'Full syllabus.',goals:'Milestone planner.',revision:'Revision queue.',resources:'CS/DA resources.',pack:'Random revision pack.',backup:'Backup & offline.'}[id];render()}
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{show(b.dataset.v,b);document.getElementById('side').classList.remove('mobileOpen')});
 
 /* Goals */
@@ -172,7 +240,9 @@ document.getElementById('goalTopic').onchange=e=>document.getElementById('otherT
 function saveGoal(){let s=document.getElementById('goalSubject').value,t=document.getElementById('goalTopic').value,date=document.getElementById('goalDate').value||today(),type=document.getElementById('goalType').value;if(s==='__other'){s=document.getElementById('otherSubject').value.trim();if(!s)return alert('Enter subject name.');if(!db.subjects[s])db.subjects[s]=[];t='__other'}let title=t==='__other'?document.getElementById('otherTopic').value.trim():db.subjects[s]?.[+t]?.title;if(!title)return alert('Select a topic.');if(t==='__other'&&!db.subjects[s].some(x=>x.title===title))db.subjects[s].push({title,done:false});db.goals.push({id:uid(),subject:s,title,type,date,done:false});closeM('goalModal');save()}
 function toggleGoal(id){let g=db.goals.find(x=>x.id===id);if(g){g.done=!g.done;save()}}
 function deleteGoal(id){let g=db.goals.find(x=>x.id===id);if(!g)return;if(!confirm('Remove this goal?'))return;db.goals=db.goals.filter(x=>x.id!==id);delete db.bookmarks[id];save()}
-function goalHTML(g){let type=(g.type||'Study').toLowerCase();return `<div class="goal ${type}"><input class="chk" type="checkbox" ${g.done?'checked':''} onchange="toggleGoal('${g.id}')"><div class="goaltext ${g.done?'done':''}">${esc(g.title)}<div class="goalmeta">${esc(g.subject)} · ${g.date}<span class="goalTypeBadge">${esc(g.type||'Study')}</span></div></div><div class="actions"><button class="star ${db.bookmarks[g.id]?'on':''}" onclick="toggleBookmarkGoal('${g.id}')">★</button><button class="goalDelete" title="Remove goal" onclick="deleteGoal('${g.id}')">×</button></div></div>`}
+function openDateModal(id){let g=db.goals.find(x=>x.id===id);if(!g)return;document.getElementById('dateGoalName').textContent=g.title+' · '+g.subject;document.getElementById('editGoalDate').value=g.date;document.getElementById('editGoalDate').dataset.id=id;openM('dateModal')}
+function saveGoalDate(){let id=document.getElementById('editGoalDate').dataset.id,date=document.getElementById('editGoalDate').value,g=db.goals.find(x=>x.id===id);if(!g||!date)return;g.date=date;closeM('dateModal');save()}
+function goalHTML(g){let type=(g.type||'Study').toLowerCase();return `<div class="goal ${type}"><input class="chk" type="checkbox" ${g.done?'checked':''} onchange="toggleGoal('${g.id}')"><div class="goaltext ${g.done?'done':''}" onclick="openDateModal('${g.id}')" style="cursor:pointer">${esc(g.title)}<div class="goalmeta">${esc(g.subject)} · ${g.date}<span class="goalTypeBadge">${esc(g.type||'Study')}</span></div></div><div class="actions"><button class="goalMove" title="Change date" onclick="openDateModal('${g.id}')">↗</button><button class="star ${db.bookmarks[g.id]?'on':''}" onclick="toggleBookmarkGoal('${g.id}')">★</button><button class="goalDelete" title="Remove goal" onclick="deleteGoal('${g.id}')">×</button></div></div>`}
 function toggleBookmarkGoal(id){let g=db.goals.find(x=>x.id===id);if(!g)return;if(db.bookmarks[id])delete db.bookmarks[id];else db.bookmarks[id]={id:uid(),source:'goal',title:g.title,subject:g.subject,strength:'Normal',revised:g.done,lastVisited:new Date().toISOString()};save()}
 
 /* Syllabus */
@@ -193,6 +263,171 @@ function renderPlans(){document.getElementById('plansList').innerHTML=db.plans.l
 function renderRevision(){let q=(document.getElementById('revSearch').value||'').toLowerCase(),st=document.getElementById('revStrength').value,rs=document.getElementById('revStatus').value,age=+document.getElementById('revAge').value||0;let arr=Object.entries(db.bookmarks).map(([id,b])=>({id,b})).filter(x=>(x.b.title+' '+x.b.subject).toLowerCase().includes(q)&&(!st||x.b.strength===st)&&(!rs||(rs==='Revised'?x.b.revised:!x.b.revised))&&(!age||daysAgo(x.b.lastVisited)>=age));document.getElementById('revisionCount').textContent=arr.length+' saved';document.getElementById('revisionList').innerHTML=arr.length?arr.map(({id,b})=>`<div class="revisionItem"><div><div><b>★ ${esc(b.title)}</b> <span class="strength ${b.strength.toLowerCase()}">${b.strength}</span></div><div class="visit">${esc(b.subject)} · ${b.revised?'Revised':'Not revised'} · last opened ${daysAgo(b.lastVisited)}d ago</div></div><div class="actions"><button class="btn" onclick="cycleStrength('${id}')">Strength</button><button class="btn" onclick="markRevised('${id}')">${b.revised?'Unmark':'Revise'}</button><button class="btn" onclick="removeBookmark('${id}')">×</button></div></div>`).join(''):'<div class="empty">No bookmarks match these filters.</div>'}
 function quickFilter(n){document.getElementById('revAge').value=n;renderRevision()}function clearFilters(){document.getElementById('revSearch').value='';document.getElementById('revStrength').value='';document.getElementById('revStatus').value='';document.getElementById('revAge').value='0';renderRevision()}
 function markRevised(id){let b=db.bookmarks[id];b.revised=!b.revised;b.lastVisited=new Date().toISOString();save()}function removeBookmark(id){delete db.bookmarks[id];save()}
+
+/* CS/DA Resources — read-only library; import/export only */
+let resourceFilter='all', packCards=[];
+function isCSDA(){return (currentBranch||'CSDA')==='CSDA'}
+function resourceTypeLabel(type){return ({complete_notes:'📝 Complete Notes',short_notes:'⚡ Short Notes',slides:'🎞️ 2–3 Slide Summary',mcq:'MCQ',msq:'MSQ',fib:'Fill in the Blank',notes:'📝 Complete Notes'})[type]||String(type||'Resource')}
+function normalizeResource(r){
+ const x={...r}; x.id=x.id||uid(); x.subject=x.subject||'General'; x.topic=x.topic||'General'; x.title=x.title||'Untitled resource';
+ if(x.kind==='questions'||['mcq','msq','fib'].includes(x.type)) {x.kind='questions';x.type=x.type||'mcq';x.questions=Array.isArray(x.questions)?x.questions:parseQuestionBlocks(x.content||'',x.type)}
+ else {x.kind='notes';x.format=x.format||x.type||'complete_notes';x.type=x.format;x.images=Array.isArray(x.images)?x.images:[]}
+ return x;
+}
+function resourceSubjectChanged(){}
+function initResourceForm(){initResourceFilters()}
+function initResourceFilters(){
+ const s=document.getElementById('resFilterSubject'); if(!s)return;
+ const subjects=Object.keys(STREAMS.CSDA||{});
+ s.innerHTML='<option value="">All subjects</option>'+subjects.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+ resourceFilterSubjectChanged();
+}
+function resourceFilterSubjectChanged(){
+ const s=document.getElementById('resFilterSubject'),t=document.getElementById('resFilterTopic'); if(!s||!t)return;
+ const subject=s.value;
+ let topics=[];
+ if(subject) topics=(db.subjects[subject]||[]).map(x=>x.title);
+ else topics=[...new Set((db.resources||[]).map(r=>r.topic).filter(Boolean))];
+ t.innerHTML='<option value="">All topics</option>'+topics.sort().map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+ renderResources();
+}
+function parseNotes(raw){
+ let lines=String(raw||'').split(/\r?\n/),html=[],para=[];
+ const flush=()=>{if(para.length){html.push('<p>'+para.join(' ')+'</p>');para=[]}};
+ lines.forEach(line=>{let x=line.trim();if(!x){flush();return} if(/^###\s+/.test(x)){flush();html.push('<h3>'+esc(x.replace(/^###\s+/,''))+'</h3>');return} if(/^##\s+/.test(x)){flush();html.push('<h2>'+esc(x.replace(/^##\s+/,''))+'</h2>');return} if(/^#\s+/.test(x)){flush();html.push('<h1>'+esc(x.replace(/^#\s+/,''))+'</h1>');return} if(/^[-*]\s+/.test(x)){flush();let last=html[html.length-1];if(!last||!last.startsWith('<ul>'))html.push('<ul><li>'+esc(x.replace(/^[-*]\s+/,''))+'</li></ul>');else html[html.length-1]=last.replace('</ul>','<li>'+esc(x.replace(/^[-*]\s+/,''))+'</li></ul>');return} if(/^TIP:\s*/i.test(x)){flush();html.push('<div class="noteCallout"><b>💡 Tip</b><br>'+esc(x.replace(/^TIP:\s*/i,''))+'</div>');return} if(/^EXAMPLE:\s*/i.test(x)){flush();html.push('<div class="noteCallout"><b>🧩 Example</b><br>'+esc(x.replace(/^EXAMPLE:\s*/i,''))+'</div>');return} para.push(esc(x))});flush();return html.join('')||'<p>No content.</p>';
+}
+function parseQuestionBlocks(raw, defaultType){
+ let blocks=String(raw||'').split(/\n\s*---+\s*\n|\n\s*END\s*\n/i).map(x=>x.trim()).filter(Boolean),out=[];
+ blocks.forEach(block=>{let lines=block.split(/\r?\n/),type=String(defaultType||'mcq').toUpperCase(),q='',opts=[],ans='',exp='';lines.forEach(line=>{let x=line.trim();if(!x)return;let m;if((m=x.match(/^TYPE:\s*(MCQ|MSQ|FIB)/i)))type=m[1].toUpperCase();else if((m=x.match(/^Q:\s*(.*)/i)))q=m[1].trim();else if((m=x.match(/^([A-H])\)\s*(.*)/i)))opts.push({key:m[1].toUpperCase(),text:m[2].trim()});else if((m=x.match(/^ANS(?:WER)?:\s*(.*)/i)))ans=m[1].trim();else if((m=x.match(/^EXPLAIN(?:ATION)?:\s*(.*)/i)))exp=m[1].trim();else if(!q)q=x;else if(type==='FIB'&&!ans)ans=x});if(q)out.push({type,q,options:opts,answer:ans,explain:exp})});return out;
+}
+function renderNoteResource(r){
+ const format=r.format||r.type||'complete_notes';
+ if(format==='slides'&&Array.isArray(r.slides)) return `<div class="resourceSlides">${r.slides.slice(0,3).map((sl,i)=>`<div class="resourceSlide"><div class="resourceFormatPill">SLIDE ${i+1}</div><h3>${esc(sl.title||'Summary')}</h3>${sl.bullets?.length?'<ul>'+sl.bullets.map(b=>'<li>'+esc(b)+'</li>').join('')+'</ul>':''}${sl.body?'<p>'+esc(sl.body)+'</p>':''}${sl.formula?'<div class="slideFormula">'+esc(sl.formula)+'</div>':''}${Array.isArray(sl.images)?sl.images.map(im=>`<img class="resourceImage" src="${esc(im.src||im)}" alt="${esc(im.caption||'Resource image')}">`).join(''):''}</div>`).join('')}</div>`;
+ let body=parseNotes(r.content||r.body||'');
+ if(Array.isArray(r.images)) body+=r.images.map(im=>`<img class="resourceImage" src="${esc(im.src||im)}" alt="${esc(im.caption||'Resource image')}">`).join('');
+ return `<div class="prettyNote"><div class="resourceFormatPill">${esc(resourceTypeLabel(format))}</div>${body}</div>`;
+}
+let quizSessions={};
+function quizKey(rid){return 'resource:'+rid}
+function getQuiz(r){
+ const key=quizKey(r.id), qs=(r.questions||parseQuestionBlocks(r.content||'',r.type));
+ if(!quizSessions[key])quizSessions[key]={index:0,answers:{},feedback:{},finished:false,correct:0,wrong:0};
+ return quizSessions[key];
+}
+function answerSet(q){return String(q.answer||'').split(/\s*,\s*/).map(x=>x.trim().toUpperCase()).filter(Boolean)}
+function answerQuestion(rid,index,value,type){
+ const r=(db.resources||[]).map(normalizeResource).find(x=>x.id===rid); if(!r)return;
+ const s=getQuiz(r); if(s.feedback[index])return;
+ const q=(r.questions||[])[index]; if(!q)return;
+ let correct=false;
+ if(String(q.type).toUpperCase()==='MSQ'){
+   const chosen=Array.isArray(value)?value.map(x=>String(x).toUpperCase()).sort():[];
+   const expected=answerSet(q).sort(); correct=JSON.stringify(chosen)===JSON.stringify(expected); s.answers[index]=chosen;
+ }else if(String(q.type).toUpperCase()==='FIB'){
+   const got=String(value||'').trim().toLowerCase(), expected=answerSet(q).map(x=>x.toLowerCase());
+   correct=expected.includes(got); s.answers[index]=value;
+ }else{
+   const got=String(value||'').trim().toUpperCase(); correct=answerSet(q).includes(got); s.answers[index]=got;
+ }
+ s.feedback[index]=correct?'correct':'wrong';
+ s.correct=Object.values(s.feedback).filter(x=>x==='correct').length;
+ s.wrong=Object.values(s.feedback).filter(x=>x==='wrong').length;
+ saveQuizPerformance(r,s,false);
+ renderResources();
+}
+function saveQuizPerformance(r,s,finished){
+ if(!db.performance)db.performance={quizAttempts:[],resourceScores:{},packScores:[]};
+ const total=(r.questions||[]).length||1;
+ db.performance.resourceScores[r.id]={resourceId:r.id,title:r.title,subject:r.subject,topic:r.topic,attempted:Object.keys(s.feedback).length,correct:s.correct,wrong:s.wrong,score:pct(s.correct,Object.keys(s.feedback).length||1),updatedAt:new Date().toISOString()};
+ if(finished){db.performance.quizAttempts.unshift({id:uid(),resourceId:r.id,title:r.title,subject:r.subject,topic:r.topic,total,correct:s.correct,wrong:s.wrong,score:pct(s.correct,total),completedAt:new Date().toISOString()});db.performance.quizAttempts=db.performance.quizAttempts.slice(0,100);}
+ localStorage.setItem(K,JSON.stringify(db));
+}
+function resetResourceQuiz(rid){delete quizSessions[quizKey(rid)];renderResources()}
+function finishResourceQuiz(rid){const r=(db.resources||[]).map(normalizeResource).find(x=>x.id===rid);if(!r)return;const s=getQuiz(r), total=(r.questions||[]).length;if(Object.keys(s.feedback).length<total)return alert('Answer every question before finishing.');s.finished=true;saveQuizPerformance(r,s,true);renderResources()}
+function quizQuestionHTML(r){
+ const s=getQuiz(r), qs=r.questions||[], i=s.index, q=qs[i]; if(!q)return '<div class="empty">No questions in this resource.</div>';
+ const typ=String(q.type||r.type||'MCQ').toUpperCase(), chosen=s.answers[i], fb=s.feedback[i];
+ let options='';
+ if(typ==='FIB') options=`<input class="quizFIB" id="fib_${esc(r.id)}" placeholder="Type your answer" value="${esc(chosen||'')}" ${fb?'disabled':''}>`;
+ else options=`<div class="quizOptions">${(q.options||[]).map(o=>{let state='';if(fb){if(answerSet(q).includes(String(o.key).toUpperCase()))state=' correct';if(String(chosen||'').split(',').includes(String(o.key).toUpperCase())&& !answerSet(q).includes(String(o.key).toUpperCase()))state=' wrong';}return `<button class="quizOption${state}" ${fb?'disabled':''} onclick="quizPick('${esc(r.id)}',${i},'${esc(o.key)}','${typ}')"><b>${esc(o.key)}.</b> ${esc(o.text)}</button>`}).join('')}</div>`;
+ if(typ==='MSQ' && !fb) options+=`<div class="hint" style="margin-top:7px">Select all correct options, then press Submit.</div>`;
+ let feedback=fb?`<div class="quizFeedback ${fb==='correct'?'ok':'bad'}">${fb==='correct'?'✓ Correct!':'✗ Incorrect.'}${q.explain?'<br><span style="font-weight:600">'+esc(q.explain)+'</span>':''}</div>`:'';
+ return `<div class="quizTop"><span class="resourceFormatPill">${typ}</span><span class="quizProgress">Question ${i+1} of ${qs.length}</span></div><div class="quizQ">${esc(q.q)}</div>${options}${typ==='FIB'&&!fb?'<button class="btn primary" style="margin-top:9px" onclick="quizFib(\''+esc(r.id)+'\','+i+')">Submit answer</button>':''}${typ==='MSQ'&&!fb?'<button class="btn primary" style="margin-top:9px" onclick="quizMSQ(\''+esc(r.id)+'\','+i+')">Submit answer</button>':''}${feedback}<div class="quizActions"><button class="btn" onclick="quizPrev('${esc(r.id)}')" ${i===0?'disabled':''}>Previous</button><span class="hint">Answered: ${Object.keys(s.feedback).length}/${qs.length}</span><button class="btn" onclick="quizNext('${esc(r.id)}')" ${!fb||i===qs.length-1?'disabled':''}>Next</button></div>${Object.keys(s.feedback).length===qs.length?`<button class="quizFinish" onclick="finishResourceQuiz('${esc(r.id)}')">Finish & show score</button>`:''}${s.finished?`<div class="quizScore"><div>QUIZ COMPLETE</div><strong>${s.correct}/${qs.length}</strong><div>${s.correct} correct · ${s.wrong} wrong · ${pct(s.correct,qs.length)}%</div><button class="btn" style="margin-top:9px" onclick="resetResourceQuiz('${esc(r.id)}')">Retry quiz</button></div>`:''}`;
+}
+function quizPick(rid,i,key,typ){if(typ==='MSQ'){let r=(db.resources||[]).map(normalizeResource).find(x=>x.id===rid),s=getQuiz(r),cur=Array.isArray(s.answers[i])?s.answers[i]:[];key=String(key).toUpperCase();cur=cur.includes(key)?cur.filter(x=>x!==key):cur.concat(key);s.answers[i]=cur;renderResources();return}answerQuestion(rid,i,key,typ)}
+function quizMSQ(rid,i){const r=(db.resources||[]).map(normalizeResource).find(x=>x.id===rid),s=getQuiz(r);answerQuestion(rid,i,s.answers[i]||[],'MSQ')}
+function quizFib(rid,i){const el=document.getElementById('fib_'+rid);answerQuestion(rid,i,el?el.value:'','FIB')}
+function quizPrev(rid){let r=(db.resources||[]).map(normalizeResource).find(x=>x.id===rid),s=getQuiz(r);s.index=Math.max(0,s.index-1);renderResources()}
+function quizNext(rid){let r=(db.resources||[]).map(normalizeResource).find(x=>x.id===rid),s=getQuiz(r);if(!s.feedback[s.index])return;s.index=Math.min((r.questions||[]).length-1,s.index+1);renderResources()}
+function resourceCard(r){
+ const meta=`<div class="resourceMeta"><span class="resourceTag">${esc(r.subject)}</span><span class="resourceTag">${esc(r.topic)}</span><span class="resourceTag">${esc(resourceTypeLabel(r.type||r.format))}</span></div>`;
+ if(r.kind==='questions'){
+   const s=getQuiz(r); return `<div class="resourceItem questions"><div><h3 style="margin:0">${esc(r.title)}</h3>${meta}</div><div class="resourceQuiz">${quizQuestionHTML(r)}</div></div>`;
+ }
+ const shortCls=(r.format==='short_notes'||r.type==='short_notes')?' shortNotes':''; const wrap=(r.format==='short_notes'||r.type==='short_notes')?'shortNoteWrap':''; return `<div class="resourceItem notes${shortCls}"><div><h3 style="margin:0">${esc(r.title)}</h3>${meta}</div><div class="resourceBody ${wrap}">${renderNoteResource(r)}</div></div>`;
+}
+function renderResources(){
+ const app=document.getElementById('resourceApp'),locked=document.getElementById('resourceLocked');if(!app||!locked)return;
+ const ok=isCSDA();app.style.display=ok?'block':'none';locked.style.display=ok?'none':'block';if(!ok)return;
+ const subject=document.getElementById('resFilterSubject')?.value||'',topic=document.getElementById('resFilterTopic')?.value||'',type=document.getElementById('resFilterType')?.value||'';
+ let arr=(db.resources||[]).map(normalizeResource).filter(r=>(!subject||r.subject===subject)&&(!topic||r.topic===topic)&&(!type||(r.type===type||r.format===type)));
+ document.getElementById('resourceCountHint').textContent=arr.length+' resource'+(arr.length===1?'':'s');
+ const fs=document.getElementById('resourceFilterStatus');
+ if(fs){const parts=[];if(subject)parts.push('Subject: '+subject);if(topic)parts.push('Topic: '+topic);if(type)parts.push('Type: '+resourceTypeLabel(type));fs.textContent=(parts.length?parts.join(' · '):'All CS/DA resources')+' · Export will include exactly what these filters show.';}
+ document.getElementById('resourceList').innerHTML=arr.length?arr.map(resourceCard).join(''):'<div class="resourceEmptyHint">No resources match these filters.<br><br>Import a prepared CS/DA resource package to grow your library. 📚</div>';
+}
+function importResourcePackage(file){
+ if(!file)return;
+ if(!isCSDA())return alert('Resources are currently available only for CS/DA.');
+ const reader=new FileReader();reader.onload=()=>{try{
+   const payload=JSON.parse(reader.result), incoming=Array.isArray(payload)?payload:(Array.isArray(payload.resources)?payload.resources:(Array.isArray(payload.data?.resources)?payload.data.resources:null));
+   if(!incoming)throw Error('No resources array');
+   let added=0,skipped=0,existing=new Set((db.resources||[]).map(r=>`${r.subject||''}|${r.topic||''}|${r.title||''}|${r.type||r.format||''}`));
+   incoming.map(normalizeResource).forEach(r=>{let key=`${r.subject}|${r.topic}|${r.title}|${r.type||r.format||''}`;if(existing.has(key)){skipped++;return}r.id=uid();db.resources.unshift(r);existing.add(key);added++});
+   save();initResourceFilters();renderResources();renderPack();alert(`Resource package imported.\n\nAdded: ${added}\nSkipped duplicates: ${skipped}`);
+ }catch(e){alert('Could not import this resource package. Please select a valid IMA Study Resource JSON file.')}};reader.readAsText(file);
+}
+function exportResourcePackage(){
+ if(!isCSDA())return alert('Resources are currently available only for CS/DA.');
+ const subject=document.getElementById('resFilterSubject')?.value||'',topic=document.getElementById('resFilterTopic')?.value||'',type=document.getElementById('resFilterType')?.value||'';
+ const resources=(db.resources||[]).map(normalizeResource).filter(r=>(!subject||r.subject===subject)&&(!topic||r.topic===topic)&&(!type||(r.type===type||r.format===type)));
+ if(!resources.length)return alert('There are no resources matching the current filters.');
+ const payload={app:'IMA Study Resource Package',version:3,exam:'GATE',branch:'CSDA',exportedAt:new Date().toISOString(),filters:{subject:subject||null,topic:topic||null,type:type||null},resources};
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ima-study-csda-resources-'+today()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+ alert('Resource export complete.\n\nExported: '+resources.length+' resource'+(resources.length===1?'':'s')+'\nOnly resources matching the current filters were included.');
+}
+function setResourceFilter(f){resourceFilter=f;renderResources()}
+let packState={type:'mcq',size:10,cards:[],index:0,answers:{},feedback:{},finished:false,wrongCards:[],retrying:false};
+function shufflePack(){
+ if(!isCSDA()){packState.cards=[];renderPack();return}
+ const type=document.getElementById('packType')?.value||'mcq',size=+(document.getElementById('packSize')?.value||10);
+ let pool=[];
+ (db.resources||[]).map(normalizeResource).forEach(r=>{
+   if(type==='mcq' && r.kind==='questions') pool.push(...(r.questions||[]).filter(q=>String(q.type).toUpperCase()==='MCQ').map(q=>({kind:'question',title:r.title,subject:r.subject,topic:r.topic,q,resourceId:r.id})));
+   if(type==='short_notes' && r.kind==='notes' && (r.format==='short_notes'||r.type==='short_notes')) pool.push({kind:'note',title:r.title,subject:r.subject,topic:r.topic,content:r.content,format:r.format,images:r.images,slides:r.slides,resourceId:r.id});
+ });
+ for(let i=pool.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}
+ packState={type,size,cards:pool.slice(0,Math.min(size,pool.length)),index:0,answers:{},feedback:{},finished:false,wrongCards:[],retrying:false};renderPack();
+}
+function packAnswer(index,value){const x=packState.cards[index];if(!x||packState.feedback[index])return;const q=x.q,correct=answerSet(q).includes(String(value).toUpperCase());packState.answers[index]=String(value).toUpperCase();packState.feedback[index]=correct?'correct':'wrong';renderPack()}
+function finishPack(){if(packState.cards.length===0)return;if(Object.keys(packState.feedback).length<packState.cards.length)return alert('Answer all questions before finishing.');packState.finished=true;packState.wrongCards=packState.cards.filter((x,i)=>packState.feedback[i]==='wrong');db.performance=db.performance||{quizAttempts:[],resourceScores:{},packScores:[]};db.performance.packScores.unshift({id:uid(),type:packState.type,total:packState.cards.length,correct:Object.values(packState.feedback).filter(x=>x==='correct').length,wrong:packState.wrongCards.length,score:pct(Object.values(packState.feedback).filter(x=>x==='correct').length,packState.cards.length),completedAt:new Date().toISOString()});db.performance.packScores=db.performance.packScores.slice(0,100);localStorage.setItem(K,JSON.stringify(db));renderPack()}
+function retryWrongPack(){if(!packState.wrongCards.length)return;packState={...packState,index:0,cards:packState.wrongCards,answers:{},feedback:{},finished:false,wrongCards:[],retrying:true};renderPack()}
+function skipWrongPack(){packState.wrongCards=[];packState.retrying=false;renderPack()}
+function renderPack(){
+ const box=document.getElementById('packList'),meta=document.getElementById('packMeta'),locked=document.getElementById('packLocked');if(!box)return;const ok=isCSDA();document.querySelector('#pack .card').style.display=ok?'block':'none';locked.style.display=ok?'none':'block';if(!ok)return;
+ const total=packState.cards.length;meta.textContent=total+' cards';
+ if(!total){box.innerHTML='<div class="emptyPack">No matching resources yet. Import CS/DA resources, then create a pack.</div>';return}
+ const x=packState.cards[packState.index];
+ if(packState.type==='short_notes'){
+   box.innerHTML=`<div class="packCard"><div class="packType">SHORT NOTE · ${packState.index+1}/${total} · ${esc(x.subject)}</div><h3>${esc(x.title)}</h3><div class="prettyNote">${renderNoteResource({format:x.format,content:x.content,images:x.images,slides:x.slides})}</div><div class="quizActions"><button class="btn" onclick="packPrev()" ${packState.index===0?'disabled':''}>Previous</button><span class="hint">Short-note revision</span><button class="btn" onclick="packNext()" ${packState.index===total-1?'disabled':''}>Next</button></div></div>`;
+   return;
+ }
+ const q=x.q,fb=packState.feedback[packState.index],chosen=packState.answers[packState.index];
+ box.innerHTML=`<div class="packCard question"><div class="packType">MCQ · ${packState.index+1}/${total} · ${esc(x.subject)}</div><h3>${esc(q.q)}</h3><div class="quizOptions">${(q.options||[]).map(o=>{let st='';if(fb&&answerSet(q).includes(String(o.key).toUpperCase()))st=' correct';if(fb&&String(chosen||'')===String(o.key).toUpperCase()&&!answerSet(q).includes(String(o.key).toUpperCase()))st=' wrong';return `<button class="quizOption${st}" ${fb?'disabled':''} onclick="packAnswer(${packState.index},'${esc(o.key)}')"><b>${esc(o.key)}.</b> ${esc(o.text)}</button>`}).join('')}</div>${fb?`<div class="quizFeedback ${fb==='correct'?'ok':'bad'}">${fb==='correct'?'✓ Correct!':'✗ Incorrect.'}${q.explain?'<br><span style="font-weight:600">'+esc(q.explain)+'</span>':''}</div>`:''}<div class="quizActions"><button class="btn" onclick="packPrev()" ${packState.index===0?'disabled':''}>Previous</button><span class="hint">Answered: ${Object.keys(packState.feedback).length}/${total}</span><button class="btn" onclick="packNext()" ${!fb||packState.index===total-1?'disabled':''}>Next</button></div>${Object.keys(packState.feedback).length===total&&!packState.finished?'<button class="quizFinish" onclick="finishPack()">Finish & show score</button>':''}${packState.finished?`<div class="quizScore"><div>PACK COMPLETE</div><strong>${Object.values(packState.feedback).filter(v=>v==='correct').length}/${total}</strong><div>${Object.values(packState.feedback).filter(v=>v==='correct').length} correct · ${Object.values(packState.feedback).filter(v=>v==='wrong').length} wrong</div>${packState.wrongCards.length?'<div style="margin-top:10px;font-weight:800">You have '+packState.wrongCards.length+' wrong question'+(packState.wrongCards.length===1?'':'s')+'.</div><div class="quizActions" style="justify-content:center"><button class="btn primary" onclick="retryWrongPack()">Re-attempt wrong questions</button><button class="btn" onclick="skipWrongPack()">No, finish</button></div>':''}</div>`:''}</div>`;
+}
+function packPrev(){packState.index=Math.max(0,packState.index-1);renderPack()}
+function packNext(){if(!packState.feedback[packState.index])return;packState.index=Math.min(packState.cards.length-1,packState.index+1);renderPack()}
+function initPack(){if(isCSDA())shufflePack();else renderPack()}
 
 /* Notes */
 function renderNotes(){
@@ -226,6 +461,9 @@ function renderDashboard(){
  document.getElementById('due').textContent=due;
  document.getElementById('todayGoals').innerHTML=t.length?t.map(goalHTML).join(''):'<div class="empty">No goals today.</div>';
  document.getElementById('weekGoals').innerHTML=w.length?w.map(goalHTML).join(''):'<div class="empty">No weekly goals yet.</div>';
+ let missed=db.goals.filter(g=>!g.done&&g.date<today());
+ document.getElementById('missedCount').textContent=missed.length+' missed';
+ document.getElementById('missedGoals').innerHTML=missed.length?missed.sort((a,b)=>a.date.localeCompare(b.date)).map(goalHTML).join(''):'<div class="empty">Nothing missed. Keep going! 🎯</div>';
  renderTypeProgress('typeProgress', trackPeriod==='week'?w:t);
 }
 let trackPeriod='today';
@@ -246,11 +484,11 @@ function renderTypeProgress(id,goals){
  box.innerHTML=types.map(([label,cls])=>{let arr=goals.filter(g=>(g.type||'Study')===label),done=arr.filter(g=>g.done).length,p=pct(done,arr.length);return `<div class="miniStat ${cls}"><div class="miniRing" style="--progress:${p}%"><b>${p}%</b></div><div class="miniLabel">${label}</div><div class="miniCount">${done}/${arr.length}</div></div>`}).join('');
 }
 
-function render(){applyTheme();renderDashboard();renderSyllabus();renderPlans();renderRevision()}
+function render(){applyTheme();renderDashboard();renderSyllabus();renderPlans();renderRevision();renderResources();renderPack();}
 
 /* Phase 3 — backup/restore + offline */
 function exportBackup(){
- const payload={app:"IMA Study",version:6,exam:"GATE",branch:currentBranch||"CSDA",exportedAt:new Date().toISOString(),data:db};
+ const payload={app:"IMA Study",version:8,exam:"GATE",branch:currentBranch||"CSDA",exportedAt:new Date().toISOString(),data:db};
  const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ima-study-backup-'+today()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
@@ -269,5 +507,5 @@ function updateOnline(){
 }
 window.addEventListener('online',updateOnline);window.addEventListener('offline',updateOnline);
 
-render();updateOnline();ensureSetup();
+initResourceForm();render();updateOnline();ensureSetup();
 </script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js").catch(()=>{});}</script></body></html>

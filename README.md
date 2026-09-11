@@ -13,3 +13,6 @@ Included:
 IMPORTANT:
 After replacing the repository files, open the GitHub Pages URL (not the GitHub file viewer).
 If an older version is still visible once, close the installed PWA/browser tab and reload the Pages URL. The new service worker deletes older IMA Study caches automatically.
+
+
+v17 UI update: contextual top action button; Add Goal appears only on Dashboard; Add Infographic appears only in Infographic Library and toggles the upload/save panel.

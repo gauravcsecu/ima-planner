@@ -16,3 +16,6 @@ If an older version is still visible once, close the installed PWA/browser tab a
 
 
 v17 UI update: contextual top action button; Add Goal appears only on Dashboard; Add Infographic appears only in Infographic Library and toggles the upload/save panel.
+
+
+v18: Resources and Random Revision Pack are available for CS/DA, ECE and EE. Resource filters follow the selected branch.

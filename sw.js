@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ima-study-v22';
+const CACHE_NAME = 'ima-study-v23';
 const APP_SHELL = [
   './',
   './index.html',

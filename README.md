@@ -1,21 +1,26 @@
-IMA Study v15
-Fix release for GitHub Pages/PWA caching.
+# IMA Study — GATE 2027 · v20
 
-Included:
-- Revision Short Notes bookmark flow
-- Revision Topics / Questions / Short Notes / Infographics
-- Infographic Library
-- Goals & Milestones removed from sidebar menu
-- Dark-mode resource contrast fixes from v14
-- Fresh service-worker cache: ima-study-v15
-- manifest.webmanifest included
+GitHub Pages / PWA release.
 
-IMPORTANT:
-After replacing the repository files, open the GitHub Pages URL (not the GitHub file viewer).
-If an older version is still visible once, close the installed PWA/browser tab and reload the Pages URL. The new service worker deletes older IMA Study caches automatically.
+## v20 Monthly Plan update
+- Replaced the Premium Color 1–10 text list with visual color swatches.
+- Removed the repeated Add subject controls from every month/week.
+- Added one planning control below Subject Short Forms: Select Month → Select Week → Select Subject Short Form → Add to Plan.
+- Only months containing at least one planned subject are shown.
+- Month Wise and Month Wise · Week Wise views remain available.
+- Existing branch-local study data and Monthly Plan data remain compatible.
 
+## Included files
+- index.html
+- manifest.webmanifest
+- sw.js
+- icon-192.png
+- icon-512.png
+- icon-512-maskable.png
+- README.md
+- README.txt
 
-v17 UI update: contextual top action button; Add Goal appears only on Dashboard; Add Infographic appears only in Infographic Library and toggles the upload/save panel.
+## GitHub Pages update
+Replace all existing repository files with all 8 files from this release. Do not upload only `index.html` because the PWA manifest and service worker also need to be updated.
 
-
-v18: Resources and Random Revision Pack are available for CS/DA, ECE and EE. Resource filters follow the selected branch.
+After committing, open the GitHub Pages site URL, not the GitHub file viewer. If an installed PWA still shows an older screen, close it and reload the Pages URL so the v20 service worker can replace older IMA Study caches.

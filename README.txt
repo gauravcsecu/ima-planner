@@ -1,52 +1,21 @@
-IMA Study — GATE Multi-Stream v12
+IMA Study — GATE 2027 v20
 
-GitHub Pages / PWA ready.
+Monthly Plan update:
+- Premium Color 1–10 list replaced by visual color swatches.
+- Repeated Add subject buttons removed from month/week rows.
+- One planning control added below Subject Short Forms:
+  Select Month -> Select Week -> Select Subject Short Form -> Add to Plan.
+- Only months that contain planned subjects are displayed.
+- Month Wise and Month Wise · Week Wise views are retained.
 
-NEW IN v12
-- CS/DA Resources is read-only: no manual Add/Edit/Delete controls.
-- Resources menu provides only Import Resources, Export Resources, and filters (Subject, Topic, Resource Type).
-- Resource types: Complete Notes, Short Notes, 2–3 Slide Summary, MCQ, MSQ, Fill in the Blank.
-- Imported notes can contain examples and images (images should be embedded as data URLs in the resource package).
-- Imported question resources can contain multiple questions with answers and explanations.
-- Resource imports MERGE into the existing CS/DA library and skip duplicates instead of replacing existing resources.
-- Export Resources creates an IMA Study Resource Package JSON containing only CS/DA resources.
-- Random Revision Pack uses imported resources.
-- Missed Goals have explicit readable light/dark/night text and controls.
+Upload/replace ALL 8 repository files:
+1. index.html
+2. manifest.webmanifest
+3. sw.js
+4. icon-192.png
+5. icon-512.png
+6. icon-512-maskable.png
+7. README.md
+8. README.txt
 
-RESOURCE PACKAGE SCHEMA
-{
-  "app": "IMA Study Resource Package",
-  "version": 2,
-  "exam": "GATE",
-  "branch": "CSDA",
-  "resources": [
-    {
-      "id": "unique-id",
-      "subject": "DBMS",
-      "topic": "Normalization",
-      "title": "Normalization — Complete Notes",
-      "kind": "notes",
-      "type": "complete_notes",
-      "format": "complete_notes",
-      "content": "# Normalization\n## 1NF\n...\nEXAMPLE: ...",
-      "images": [{"src":"data:image/png;base64,...","caption":"Diagram"}]
-    },
-    {
-      "id": "unique-id-2",
-      "subject": "DBMS",
-      "topic": "Normalization",
-      "title": "Normalization PYQs",
-      "kind": "questions",
-      "type": "mcq",
-      "questions": [{"type":"MCQ","q":"...","options":[{"key":"A","text":"..."}],"answer":"B","explain":"..."}]
-    }
-  ]
-}
-
-For GitHub updates: keep the same repository and GitHub Pages URL. Replace the website files with these files; do not clear browser/site storage.
-
-
-V11 notes: Resource export respects the active Subject, Topic and Resource Type filters. This package contains no sample goals, sample notes, or sample resources.
-
-
-V12 update: resource quiz interactions, local quiz/pack performance scoring, 5/10 MCQ or Short Notes revision-pack filter, and score reveal only after finishing.
+Important: Commit all files. Then open the GitHub Pages URL. The v20 service worker cache is named ima-study-v20 and removes older IMA Study caches.

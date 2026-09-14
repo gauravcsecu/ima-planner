@@ -123,6 +123,8 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 [data-theme=dark] .savedNote{background:#302919}
 [data-theme=dark] .savedQuestion{background:#172822;color:#effaf5}
 [data-theme=dark] .savedQuestion .savedOption{background:#242b2a;color:#effaf5;border-color:#3c514b}
+/* v19 Monthly Plan */
+.monthPlanToolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:15px 0}.monthPlanToggle{display:flex;gap:4px;padding:4px;border:1px solid var(--line);background:var(--soft);border-radius:999px}.monthPlanToggle button{border:0;background:transparent;color:var(--muted);padding:7px 12px;border-radius:999px;font-size:10px;font-weight:900}.monthPlanToggle button.active{background:var(--card);color:var(--a)}.monthPlanGrid{display:grid;gap:14px}.monthBlock{border:1px solid var(--line);border-radius:20px;padding:15px;background:var(--card);box-shadow:var(--shadow)}.monthBlock h3{margin:0 0 12px;font:700 17px "Space Grotesk",system-ui}.weekRows{display:grid;gap:8px}.weekRow{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:start;border-top:1px solid var(--line);padding-top:9px}.weekRow:first-child{border-top:0;padding-top:0}.weekLabel{font-size:10px;font-weight:900;color:var(--muted);padding-top:8px}.tagCanvas,.monthSummary{display:flex;flex-wrap:wrap;gap:7px;min-height:34px}.planTag,.summaryTag{border:0;border-radius:11px;padding:7px 10px;color:#fff;font-weight:900;font-size:11px;cursor:pointer;box-shadow:0 5px 14px rgba(0,0,0,.1)}.planTag small{display:block;font-size:8px;font-weight:700;opacity:.9;margin-top:2px}.planTag.empty{color:var(--muted);background:var(--soft)!important;box-shadow:none}.planEditor{margin-top:16px;padding:16px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#f2efff,#eefbf7,#fff5f8)}.planEditor h3{margin:0 0 10px;font-size:15px}.planAddForm{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px}.planAddForm.planTagForm{grid-template-columns:1fr 1fr auto;align-items:center}.planSelectHint{font-size:10px;color:var(--muted);margin-top:8px}.planColorPalette{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding:5px 0}.planColorSwatch{width:28px;height:28px;border-radius:50%;border:2px solid transparent;box-shadow:0 2px 7px rgba(0,0,0,.14);cursor:pointer;position:relative;padding:0}.planColorSwatch.selected{border-color:var(--ink);box-shadow:0 0 0 2px var(--card),0 0 0 4px var(--ink)}.planColorSwatch.selected:after{content:'✓';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:900;text-shadow:0 1px 3px rgba(0,0,0,.35)}.monthPlanEntry{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px;align-items:end;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}.monthPlanEntry label{display:block;font-size:9px;font-weight:900;color:var(--muted);margin:0 0 5px;text-transform:uppercase;letter-spacing:.04em}.monthPlanEmpty{padding:20px;border:1px dashed var(--line);border-radius:18px;text-align:center;color:var(--muted);background:var(--soft)}.tagList{display:grid;gap:7px;margin-top:12px}.tagManageItem{display:grid;grid-template-columns:14px 1fr auto;gap:9px;align-items:center;padding:9px 10px;border:1px solid var(--line);border-radius:13px;background:var(--card)}.colorDot{width:14px;height:14px;border-radius:50%}.tagManageItem b{font-size:11px}.tagManageItem span{font-size:9px;color:var(--muted)}.tagManageActions{display:flex;gap:5px}.tagManageActions button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 8px;font-size:10px}@media(max-width:700px){.weekRow{grid-template-columns:58px 1fr}.planAddForm,.monthPlanEntry{grid-template-columns:1fr 1fr}.planAddForm button,.monthPlanEntry button{grid-column:span 2}}@media(max-width:500px){.planAddForm,.monthPlanEntry{grid-template-columns:1fr}.planAddForm button,.monthPlanEntry button{grid-column:auto}.planColorSwatch{width:30px;height:30px}}
 </style></head>
 <body>
 <div class="app">
@@ -164,6 +166,7 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 
 
 
+<section id="monthlyPlan" class="view"><div class="top"><div><div class="ey">PLANNING</div><h1>Monthly Plan</h1><p>Arrange subject short forms week by week or view the month at a glance.</p></div></div><div class="card"><div class="monthPlanToolbar"><div><div class="head"><h2>Study Plan</h2></div><div class="hint">Add as many subject tags as needed in any week.</div></div><div class="monthPlanToggle"><button id="planViewWeek" class="active" onclick="setPlanView('week')">MONTH WISE · WEEK WISE</button><button id="planViewMonth" onclick="setPlanView('month')">MONTH WISE</button></div></div><div id="monthlyPlanBoard"></div><div class="planEditor"><h3>Subject Short Forms</h3><div class="hint">Create up to 10 subject tags. Pick a premium color visually — no color list.</div><div class="planAddForm planTagForm"><input id="planFullName" placeholder="Full form · Computer Networks"><input id="planShortName" placeholder="Short form · CN" maxlength="8"><div id="planColorPalette" class="planColorPalette" aria-label="Premium colors"></div><button class="btn primary" onclick="addPlanTag()">Add Subject</button></div><div class="planSelectHint">Maximum 10 subject tags.</div><div id="planTagList" class="tagList"></div><div class="monthPlanEntry"><div><label for="planMonth">Select Month</label><select id="planMonth"></select></div><div><label for="planWeek">Select Week</label><select id="planWeek"><option value="0">Week 1</option><option value="1">Week 2</option><option value="2">Week 3</option><option value="3">Week 4</option></select></div><div><label for="planSubject">Add Subject Short Form</label><select id="planSubject"></select></div><button class="btn primary" onclick="addSelectedPlanSubject()">＋ Add to Plan</button></div><div class="planSelectHint">Only months that contain something you add will appear in the plan above.</div></div></div></section>
 <section id="infographic" class="view"><div class="card"><div class="head"><div><h2>Infographic Library</h2><div class="hint">Upload A4-size study infographics, assign subject + topic, and bookmark them for revision.</div></div><span class="pill">LOCAL ONLY</span></div>
 <div class="infographicToolbar collapsed" id="infographicUploadPanel"><input id="infographicFile" type="file" accept="image/*" hidden onchange="previewInfographic(this.files[0]);this.value=''">
 <div class="infographicForm"><select id="infographicSubject" onchange="infographicSubjectChanged()"></select><select id="infographicTopic"></select></div>
@@ -506,7 +509,7 @@ function renderTopActions(){
  if(!box)return;
  let html='<button class="btn mobileMenu" onclick="toggleMobile()">☰</button>';
  if(activeView==='dashboard'){
-   html+='<button class="btn primary" onclick="openGoalModal()">＋ Add Goal</button>';
+   html+='<button class="btn primary" onclick="openGoalModal()">＋ Add Goal</button><button class="btn primary" onclick="show(\'monthlyPlan\')">＋ Monthly Plan</button>';
  }else if(activeView==='infographic'){
    html+='<button class="btn primary" onclick="toggleInfographicForm()">＋ '+(infographicFormOpen?'Hide':'Add')+' Infographic</button>';
  }
@@ -518,6 +521,74 @@ function toggleInfographicForm(){
  if(panel)panel.classList.toggle('collapsed',!infographicFormOpen);
  renderTopActions();
 }
+
+/* v19 Monthly Plan */
+const MONTH_PLAN_KEY='ima-study-month-plan-v1';
+const MONTH_PLAN_COLORS=['#7C5CFC','#FF6B9A','#00A884','#FF8A4C','#3B82F6','#8B5CF6','#D946EF','#14B8A6','#F59E0B','#EF4444'];
+let planView='week';
+function getMonthPlan(){try{const all=JSON.parse(localStorage.getItem(MONTH_PLAN_KEY)||'{}');return all[currentBranch||'CSDA']||{tags:[],months:{}}}catch(e){return{tags:[],months:{}}}}
+function saveMonthPlan(d){let all={};try{all=JSON.parse(localStorage.getItem(MONTH_PLAN_KEY)||'{}')}catch(e){}all[currentBranch||'CSDA']=d;localStorage.setItem(MONTH_PLAN_KEY,JSON.stringify(all))}
+function monthNames(){return Array.from({length:12},(_,i)=>new Intl.DateTimeFormat('en',{month:'short'}).format(new Date(2024,i,1)))}
+function planMonthKey(i){return String(new Date().getFullYear())+'-'+String(i+1).padStart(2,'0')}
+function ensureMonthPlan(){const d=getMonthPlan();if(!d.tags)d.tags=[];if(!d.months)d.months={};saveMonthPlan(d);return d}
+function setPlanView(v){planView=v;document.getElementById('planViewWeek')?.classList.toggle('active',v==='week');document.getElementById('planViewMonth')?.classList.toggle('active',v==='month');renderMonthlyPlan()}
+function planTagById(d,id){return d.tags.find(x=>x.id===id)}
+function addPlanToWeek(mi,w,id){const d=ensureMonthPlan(),k=planMonthKey(mi);if(!d.months[k])d.months[k]=[[],[],[],[]];if(!d.months[k][w])d.months[k][w]=[];if(!d.months[k][w].includes(id))d.months[k][w].push(id);saveMonthPlan(d);renderMonthlyPlan()}
+function removePlanFromWeek(mi,w,id){const d=ensureMonthPlan(),k=planMonthKey(mi);if(d.months[k]?.[w]){d.months[k][w]=d.months[k][w].filter(x=>x!==id);if(d.months[k].every(a=>!a.length))delete d.months[k];}saveMonthPlan(d);renderMonthlyPlan()}
+function planHasEntries(d,mi){const weeks=d.months[planMonthKey(mi)]||[];return weeks.some(a=>Array.isArray(a)&&a.length)}
+function populatePlanEntrySelectors(){
+ const d=ensureMonthPlan();
+ const month=document.getElementById('planMonth'),subject=document.getElementById('planSubject');
+ if(month){const old=month.value;month.innerHTML=monthNames().map((m,i)=>`<option value="${i}">${m}</option>`).join('');if(old!==''&&Number.isInteger(Number(old)))month.value=old;}
+ if(subject){const old=subject.value;subject.innerHTML=d.tags.length?d.tags.map(t=>`<option value="${esc(t.id)}">${esc(t.short)} · ${esc(t.full)}</option>`).join(''):'<option value="">Add a subject short form first</option>';if(old&&d.tags.some(t=>t.id===old))subject.value=old;}
+}
+function addSelectedPlanSubject(){const mi=Number(document.getElementById('planMonth')?.value),w=Number(document.getElementById('planWeek')?.value),id=document.getElementById('planSubject')?.value;if(!Number.isInteger(mi)||mi<0||mi>11||!Number.isInteger(w)||w<0||w>3)return;if(!id)return alert('Add a subject short form first.');addPlanToWeek(mi,w,id)}
+function renderMonthlyPlan(){
+ const board=document.getElementById('monthlyPlanBoard');if(!board)return;
+ const d=ensureMonthPlan();
+ renderPlanColorPalette();populatePlanEntrySelectors();
+ board.innerHTML='';
+ const wrap=document.createElement('div');wrap.className='monthPlanGrid';
+ const activeMonths=monthNames().map((m,mi)=>({m,mi})).filter(x=>planHasEntries(d,x.mi));
+ if(!activeMonths.length){const e=document.createElement('div');e.className='monthPlanEmpty';e.innerHTML='No months planned yet.<br>Select a month, week, and subject short form below to add your first plan.';board.appendChild(e);renderPlanTagList();return;}
+ activeMonths.forEach(({m,mi})=>{
+   const section=document.createElement('section');section.className='monthBlock';
+   const h=document.createElement('h3');h.textContent=m;section.appendChild(h);
+   if(planView==='week'){
+     const rows=document.createElement('div');rows.className='weekRows';
+     const weeks=d.months[planMonthKey(mi)]||[[],[],[],[]];
+     weeks.forEach((ids,w)=>{
+       if(!Array.isArray(ids)||!ids.length)return;
+       const row=document.createElement('div');row.className='weekRow';
+       const label=document.createElement('div');label.className='weekLabel';label.textContent='Week '+(w+1);
+       const canvas=document.createElement('div');canvas.className='tagCanvas';
+       ids.map(id=>planTagById(d,id)).filter(Boolean).forEach(t=>{const b=document.createElement('button');b.className='planTag';b.style.background=t.color;b.title='Remove '+t.full;b.textContent=t.short;const sm=document.createElement('small');sm.textContent=t.full;b.appendChild(sm);b.onclick=()=>removePlanFromWeek(mi,w,t.id);canvas.appendChild(b)});
+       row.append(label,canvas);rows.appendChild(row);
+     });
+     section.appendChild(rows);
+   }else{
+     const summary=document.createElement('div');summary.className='monthSummary';
+     const weeks=d.months[planMonthKey(mi)]||[[],[],[],[]];
+     [...new Set(weeks.flat())].map(id=>planTagById(d,id)).filter(Boolean).forEach(t=>{const x=document.createElement('span');x.className='summaryTag';x.style.background=t.color;x.title=t.full;x.textContent=t.short;summary.appendChild(x)});
+     section.appendChild(summary);
+   }
+   wrap.appendChild(section);
+ });
+ board.appendChild(wrap);renderPlanTagList();
+}
+function renderPlanColorPalette(){
+ const box=document.getElementById('planColorPalette');if(!box)return;
+ let selected=box.dataset.value||MONTH_PLAN_COLORS[0];if(!MONTH_PLAN_COLORS.includes(selected))selected=MONTH_PLAN_COLORS[0];box.dataset.value=selected;box.innerHTML='';
+ MONTH_PLAN_COLORS.forEach((c,i)=>{const b=document.createElement('button');b.type='button';b.className='planColorSwatch'+(c===selected?' selected':'');b.style.background=c;b.title='Premium Color '+(i+1);b.setAttribute('aria-label','Premium Color '+(i+1));b.onclick=()=>{box.dataset.value=c;renderPlanColorPalette()};box.appendChild(b)});
+}
+function renderPlanTagList(){
+ const box=document.getElementById('planTagList');if(!box)return;const d=ensureMonthPlan();box.innerHTML='';
+ if(!d.tags.length){const e=document.createElement('div');e.className='empty';e.textContent='No subject short forms yet.';box.appendChild(e);return;}
+ d.tags.forEach(t=>{const item=document.createElement('div');item.className='tagManageItem';const dot=document.createElement('i');dot.className='colorDot';dot.style.background=t.color;const info=document.createElement('div');const b=document.createElement('b');b.textContent=t.short;const br=document.createElement('br');const sp=document.createElement('span');sp.textContent=t.full;info.append(b,br,sp);const actions=document.createElement('div');actions.className='tagManageActions';const edit=document.createElement('button');edit.textContent='Edit';edit.onclick=()=>editPlanTag(t.id);const del=document.createElement('button');del.textContent='Delete';del.onclick=()=>deletePlanTag(t.id);actions.append(edit,del);item.append(dot,info,actions);box.appendChild(item)});
+}
+function addPlanTag(){const full=document.getElementById('planFullName')?.value.trim(),sh=document.getElementById('planShortName')?.value.trim().toUpperCase(),palette=document.getElementById('planColorPalette'),color=palette?.dataset.value||MONTH_PLAN_COLORS[0];if(!full||!sh)return alert('Enter both full form and short form.');const d=ensureMonthPlan();if(d.tags.length>=10)return alert('Maximum 10 subject tags allowed.');if(d.tags.some(x=>x.short===sh))return alert('That short form already exists.');d.tags.push({id:'pt-'+Date.now().toString(36)+Math.random().toString(36).slice(2,6),full,short:sh,color});saveMonthPlan(d);document.getElementById('planFullName').value='';document.getElementById('planShortName').value='';renderMonthlyPlan()}
+function editPlanTag(id){const d=ensureMonthPlan(),t=planTagById(d,id);if(!t)return;const full=prompt('Full form:',t.full);if(full===null)return;const sh=prompt('Short form:',t.short);if(sh===null)return;const c=prompt('Color number (1-10):',String(Math.max(1,MONTH_PLAN_COLORS.indexOf(t.color)+1)));if(c===null)return;const ci=Math.min(10,Math.max(1,Number(c)||1))-1,ns=sh.trim().toUpperCase();if(d.tags.some(x=>x.id!==id&&x.short===ns))return alert('That short form already exists.');t.full=full.trim();t.short=ns;t.color=MONTH_PLAN_COLORS[ci];saveMonthPlan(d);renderMonthlyPlan()}
+function deletePlanTag(id){const d=ensureMonthPlan(),t=planTagById(d,id);if(!t||!confirm('Delete '+t.short+'? It will also be removed from the monthly plan.'))return;d.tags=d.tags.filter(x=>x.id!==id);Object.keys(d.months||{}).forEach(k=>d.months[k]=(d.months[k]||[[],[],[],[]]).map(a=>a.filter(x=>x!==id)));saveMonthPlan(d);renderMonthlyPlan()}
 
 /* Infographics */
 function infographicSubjectChanged(){let s=document.getElementById('infographicSubject')?.value,t=document.getElementById('infographicTopic');if(!t)return;if(!s){t.innerHTML='<option value="">Select subject first</option>';return}t.innerHTML=(db.subjects[s]||[]).map(x=>`<option>${esc(x.title)}</option>`).join('')+'<option value="__other">＋ Other topic</option>';}
@@ -587,7 +658,7 @@ function renderTypeProgress(id,goals){
  box.innerHTML=types.map(([label,cls])=>{let arr=goals.filter(g=>(g.type||'Study')===label),done=arr.filter(g=>g.done).length,p=pct(done,arr.length);return `<div class="miniStat ${cls}"><div class="miniRing" style="--progress:${p}%"><b>${p}%</b></div><div class="miniLabel">${label}</div><div class="miniCount">${done}/${arr.length}</div></div>`}).join('');
 }
 
-function render(){applyTheme();renderTopActions();renderDashboard();renderSyllabus();renderPlans();renderRevision();renderResources();renderPack();initInfographicForm();initInfographicFilters();renderInfographics();}
+function render(){applyTheme();renderTopActions();renderDashboard();renderSyllabus();renderPlans();renderRevision();renderResources();renderMonthlyPlan();renderPack();initInfographicForm();initInfographicFilters();renderInfographics();}
 
 /* Phase 3 — backup/restore + offline */
 function exportBackup(){

@@ -175,7 +175,7 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <div class="infographicPreview" id="infographicList"></div></div></section>
 <section id="resources" class="view">
 <div class="card resourceOnlyCard" id="resourceApp">
-<div class="head"><div><h2>CS/DA Resource Library</h2><div class="hint">Import prepared learning packages. Resources are read-only inside IMA Study.</div></div><span class="pill">CS/DA ONLY</span></div>
+<div class="head"><div><h2 id="resourceLibraryTitle">Resource Library</h2><div class="hint">Import prepared learning packages. Resources are read-only inside IMA Study.</div></div><span class="pill">LOCAL ONLY</span></div>
 <div class="resourceToolbar resourceImportToolbar">
 <div class="resourceActions resourceTransferActions"><input id="resourcePackageFile" type="file" accept=".json,application/json" hidden onchange="importResourcePackage(this.files[0]);this.value=''">
 <button class="resourceTransferBtn importBtn" onclick="document.getElementById('resourcePackageFile').click()"><span class="transferIcon">IMPORT</span><span><b>Import Resources</b><small>Add a prepared resource package</small></span></button>
@@ -185,22 +185,22 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <select id="resFilterTopic" onchange="renderResources()"><option value="">All topics</option></select>
 <select id="resFilterType" onchange="renderResources()"><option value="">All resource types</option><option value="complete_notes">📝 Complete Notes</option><option value="short_notes">⚡ Short Notes</option><option value="slides">🎞️ 2–3 Slide Summary</option><option value="mcq">MCQ</option><option value="msq">MSQ</option><option value="fib">Fill in the Blank</option></select>
 </div>
-<div class="resourceFilterStatus" id="resourceFilterStatus">Showing all CS/DA resources · Export will include exactly what these filters show.</div>
+<div class="resourceFilterStatus" id="resourceFilterStatus">Showing all resources · Export will include exactly what these filters show.</div>
 <div class="resourceImportInfo"><b>Read-only library:</b> Resources can only enter IMA Study through a prepared JSON package. You cannot manually add, edit or delete resources here.</div>
 </div>
 <div class="resourceLibraryHead"><div><h2>Your resources</h2><div class="hint" id="resourceCountHint">0 resources</div></div></div>
 <div id="resourceList"></div>
 </div>
-<div class="card resourceLocked" id="resourceLocked" style="display:none"><h2>Resources are currently for CS/DA</h2><p class="muted">Switch to CS/DA to access the resource library. ECE and EE data remain separate.</p><button class="btn primary" onclick="openStreamSwitcher()">⇄ Switch to CS/DA</button></div>
+<div class="card resourceLocked" id="resourceLocked" style="display:none"></div>
 </section>
 
 <section id="pack" class="view">
 <div class="card">
-<div class="head"><div><h2>🎲 Random Revision Pack</h2><div class="hint">A shuffled mini-pack from the CS/DA resources you added.</div></div><button class="btn primary" onclick="shufflePack()">↻ New pack</button></div>
+<div class="head"><div><h2>🎲 Random Revision Pack</h2><div class="hint">A shuffled mini-pack from the resources available in your selected branch.</div></div><button class="btn primary" onclick="shufflePack()">↻ New pack</button></div>
 <div class="packControls"><div class="packFilter"><label>TYPE</label><select id="packType" onchange="shufflePack()"><option value="mcq">MCQ</option><option value="short_notes">Short Notes</option></select><select id="packSize" onchange="shufflePack()"><option value="5">5</option><option value="10" selected>10</option></select></div><span class="pill" id="packMeta">0 cards</span></div>
 <div id="packList"></div>
 </div>
-<div class="card resourceLocked" id="packLocked" style="display:none"><h2>Revision Pack is currently for CS/DA</h2><p class="muted">Add CS/DA resources first, then shuffle a fresh pack whenever you get bored.</p><button class="btn primary" onclick="openStreamSwitcher()">⇄ Switch to CS/DA</button></div>
+<div class="card resourceLocked" id="packLocked" style="display:none"></div>
 </section>
 
 <section id="backup" class="view">
@@ -216,7 +216,7 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 </section>
 </main></div>
 
-<div id="setupOverlay" class="streamOverlay"><div class="streamBox"><div class="streamBrand">IMA STUDY · GATE 2027</div><div id="examStep"><h1>Choose your exam</h1><p>Select the exam you are preparing for.</p><div class="streamGrid" style="grid-template-columns:1fr"><button class="streamCard" onclick="chooseExam('GATE')"><div class="streamIcon">🎯</div><b>GATE</b><span>Graduate Aptitude Test in Engineering</span></button></div></div><div id="branchStep" style="display:none"><button class="setupBack" onclick="showExamStep()">← Change exam</button><h1>Choose your branch</h1><p>GATE 2027 syllabus dashboard</p><div class="streamGrid"><button class="streamCard" onclick="selectBranch('CSDA')"><div class="streamIcon">💻</div><b>CS/DA</b><span>Computer Science & Data Science</span></button><button class="streamCard" onclick="selectBranch('ECE')"><div class="streamIcon">📡</div><b>ECE</b><span>Electronics & Communication Engineering</span></button><button class="streamCard" onclick="selectBranch('EE')"><div class="streamIcon">⚡</div><b>EE</b><span>Electrical Engineering</span></button></div><div class="streamNote">Your study progress, goals, notes and bookmarks are stored separately for each branch.</div></div></div></div>
+<div id="setupOverlay" class="streamOverlay"><div class="streamBox"><div class="streamBrand">IMA STUDY · GATE 2027</div><div id="examStep"><h1>Choose your exam</h1><p>Select the exam you are preparing for.</p><div class="streamGrid" style="grid-template-columns:1fr"><button class="streamCard" onclick="chooseExam('GATE')"><div class="streamIcon">🎯</div><b>GATE</b><span>Graduate Aptitude Test in Engineering</span></button></div></div><div id="branchStep" style="display:none"><button class="setupBack" onclick="showExamStep()">← Change exam</button><h1>Choose your branch</h1><p>GATE 2027 syllabus dashboard</p><div class="streamGrid"><button class="streamCard" onclick="selectBranch('CSDA')"><div class="streamIcon">💻</div><b>CS/DA</b><span>Computer Science & Data Science</span></button><button class="streamCard" onclick="selectBranch('ECE')"><div class="streamIcon">📡</div><b>ECE</b><span>Electronics & Communication Engineering</span></button><button class="streamCard" onclick="selectBranch('EE')"><div class="streamIcon">⚡</div><b>EE</b><span>Electrical Engineering</span></button></div><div class="streamNote">Your study progress, resources, goals and bookmarks are stored separately for each branch.</div></div></div></div>
 <div id="goalModal" class="overlay"><div class="modal"><div class="head"><h2>Add goal</h2><button class="iconbtn" onclick="closeM('goalModal')">✕</button></div><div class="form" style="margin-top:15px"><label class="hint">Subject</label><select id="goalSubject" onchange="goalSubjectChanged()"></select><div id="otherSubjectBox" class="hidden"><input id="otherSubject" placeholder="New subject name"></div><label class="hint">Syllabus topic</label><select id="goalTopic"></select><div id="otherTopicBox" class="hidden"><input id="otherTopic" placeholder="New topic name"></div><div class="row"><input id="goalDate" type="date"><select id="goalType"><option>Study</option><option>Practice</option><option>Revision</option></select></div><div class="actions" style="justify-content:flex-end"><button class="btn" onclick="closeM('goalModal')">Cancel</button><button class="btn primary" onclick="saveGoal()">Add goal</button></div></div></div></div>
 
 <div id="dateModal" class="overlay"><div class="modal"><div class="head"><h2>Change goal date</h2><button class="iconbtn" onclick="closeM('dateModal')">✕</button></div><div class="form" style="margin-top:15px"><div id="dateGoalName" class="hint"></div><label class="hint">New date</label><input id="editGoalDate" type="date"><div class="actions" style="justify-content:flex-end"><button class="btn" onclick="closeM('dateModal')">Cancel</button><button class="btn primary" onclick="saveGoalDate()">Move goal</button></div></div></div></div>
@@ -270,7 +270,7 @@ function toggleDark(){db.theme=db.theme==='dark'?'light':'dark';save()}
 function toggleNight(){db.theme=db.theme==='night'?'light':'night';save()}
 function toggleSidebar(){document.getElementById('side').classList.toggle('closed')}function toggleMobile(){document.getElementById('side').classList.toggle('mobileOpen')}
 let activeView='dashboard';
-function show(id,b){activeView=id;document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(b)b.classList.add('active');document.getElementById('pageTitle').textContent={dashboard:'Your command center.',syllabus:'Full syllabus.',goals:'Milestone planner.',revision:'Revision queue.',resources:'CS/DA resources.',infographic:'Infographic library.',pack:'Random revision pack.',backup:'Backup & offline.'}[id];render()}
+function show(id,b){activeView=id;document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(b)b.classList.add('active');document.getElementById('pageTitle').textContent={dashboard:'Your command center.',syllabus:'Full syllabus.',goals:'Milestone planner.',revision:'Revision queue.',resources:'Resource library.',infographic:'Infographic library.',pack:'Random revision pack.',backup:'Backup & offline.'}[id];render()}
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{show(b.dataset.v,b);document.getElementById('side').classList.remove('mobileOpen')});
 
 /* Goals */
@@ -329,11 +329,11 @@ function savedInfographicBookmarkHTML(id,b){let im=db.infographics.find(x=>x.id=
 
 function markRevised(id){let b=db.bookmarks[id];b.revised=!b.revised;b.lastVisited=new Date().toISOString();save()}function removeBookmark(id){delete db.bookmarks[id];save()}
 
-/* CS/DA Resources — read-only library; import/export only */
+/* Branch Resources — read-only library; import/export only */
 let resourceFilter='all', packCards=[];
 let revisionTab='queue';
 let pendingInfographic=null;
-function isCSDA(){return (currentBranch||'CSDA')==='CSDA'}
+function isCSDA(){return true}
 function resourceTypeLabel(type){return ({complete_notes:'📝 Complete Notes',short_notes:'⚡ Short Notes',slides:'🎞️ 2–3 Slide Summary',mcq:'MCQ',msq:'MSQ',fib:'Fill in the Blank',notes:'📝 Complete Notes'})[type]||String(type||'Resource')}
 function normalizeResource(r){
  const x={...r}; x.id=x.id||uid(); x.subject=x.subject||'General'; x.topic=x.topic||'General'; x.title=x.title||'Untitled resource';
@@ -345,7 +345,7 @@ function resourceSubjectChanged(){}
 function initResourceForm(){initResourceFilters()}
 function initResourceFilters(){
  const s=document.getElementById('resFilterSubject'); if(!s)return;
- const subjects=Object.keys(STREAMS.CSDA||{});
+ const subjects=Object.keys(STREAMS[currentBranch||'CSDA']||{});
  s.innerHTML='<option value="">All subjects</option>'+subjects.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
  resourceFilterSubjectChanged();
 }
@@ -438,17 +438,18 @@ function resourceCard(r){
 
 function renderResources(){
  const app=document.getElementById('resourceApp'),locked=document.getElementById('resourceLocked');if(!app||!locked)return;
- const ok=isCSDA();app.style.display=ok?'block':'none';locked.style.display=ok?'none':'block';if(!ok)return;
+ app.style.display='block';locked.style.display='none';
+ const title=document.getElementById('resourceLibraryTitle');if(title)title.textContent=(currentBranch==='ECE'?'ECE':currentBranch==='EE'?'EE':'CS/DA')+' Resource Library';
  const subject=document.getElementById('resFilterSubject')?.value||'',topic=document.getElementById('resFilterTopic')?.value||'',type=document.getElementById('resFilterType')?.value||'';
  let arr=(db.resources||[]).map(normalizeResource).filter(r=>(!subject||r.subject===subject)&&(!topic||r.topic===topic)&&(!type||(r.type===type||r.format===type)));
  document.getElementById('resourceCountHint').textContent=arr.length+' resource'+(arr.length===1?'':'s');
  const fs=document.getElementById('resourceFilterStatus');
- if(fs){const parts=[];if(subject)parts.push('Subject: '+subject);if(topic)parts.push('Topic: '+topic);if(type)parts.push('Type: '+resourceTypeLabel(type));fs.textContent=(parts.length?parts.join(' · '):'All CS/DA resources')+' · Export will include exactly what these filters show.';}
- document.getElementById('resourceList').innerHTML=arr.length?arr.map(resourceCard).join(''):'<div class="resourceEmptyHint">No resources match these filters.<br><br>Import a prepared CS/DA resource package to grow your library. 📚</div>';
+ if(fs){const parts=[];if(subject)parts.push('Subject: '+subject);if(topic)parts.push('Topic: '+topic);if(type)parts.push('Type: '+resourceTypeLabel(type));fs.textContent=(parts.length?parts.join(' · '):'All '+(currentBranch==='ECE'?'ECE':currentBranch==='EE'?'EE':'CS/DA')+' resources')+' · Export will include exactly what these filters show.';}
+ document.getElementById('resourceList').innerHTML=arr.length?arr.map(resourceCard).join(''):'<div class="resourceEmptyHint">No resources match these filters.<br><br>Import a prepared resource package for this branch to grow your library. 📚</div>';
 }
 function importResourcePackage(file){
  if(!file)return;
- if(!isCSDA())return alert('Resources are currently available only for CS/DA.');
+
  const reader=new FileReader();reader.onload=()=>{try{
    const payload=JSON.parse(reader.result), incoming=Array.isArray(payload)?payload:(Array.isArray(payload.resources)?payload.resources:(Array.isArray(payload.data?.resources)?payload.data.resources:null));
    if(!incoming)throw Error('No resources array');
@@ -458,18 +459,17 @@ function importResourcePackage(file){
  }catch(e){alert('Could not import this resource package. Please select a valid IMA Study Resource JSON file.')}};reader.readAsText(file);
 }
 function exportResourcePackage(){
- if(!isCSDA())return alert('Resources are currently available only for CS/DA.');
+
  const subject=document.getElementById('resFilterSubject')?.value||'',topic=document.getElementById('resFilterTopic')?.value||'',type=document.getElementById('resFilterType')?.value||'';
  const resources=(db.resources||[]).map(normalizeResource).filter(r=>(!subject||r.subject===subject)&&(!topic||r.topic===topic)&&(!type||(r.type===type||r.format===type)));
  if(!resources.length)return alert('There are no resources matching the current filters.');
- const payload={app:'IMA Study Resource Package',version:3,exam:'GATE',branch:'CSDA',exportedAt:new Date().toISOString(),filters:{subject:subject||null,topic:topic||null,type:type||null},resources};
- const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ima-study-csda-resources-'+today()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+ const payload={app:'IMA Study Resource Package',version:3,exam:'GATE',branch:currentBranch||'CSDA',exportedAt:new Date().toISOString(),filters:{subject:subject||null,topic:topic||null,type:type||null},resources};
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ima-study-'+String(currentBranch||'CSDA').toLowerCase()+'-resources-'+today()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
  alert('Resource export complete.\n\nExported: '+resources.length+' resource'+(resources.length===1?'':'s')+'\nOnly resources matching the current filters were included.');
 }
 function setResourceFilter(f){resourceFilter=f;renderResources()}
 let packState={type:'mcq',size:10,cards:[],index:0,answers:{},feedback:{},finished:false,wrongCards:[],retrying:false};
 function shufflePack(){
- if(!isCSDA()){packState.cards=[];renderPack();return}
  const type=document.getElementById('packType')?.value||'mcq',size=+(document.getElementById('packSize')?.value||10);
  let pool=[];
  (db.resources||[]).map(normalizeResource).forEach(r=>{
@@ -484,9 +484,9 @@ function finishPack(){if(packState.cards.length===0)return;if(Object.keys(packSt
 function retryWrongPack(){if(!packState.wrongCards.length)return;packState={...packState,index:0,cards:packState.wrongCards,answers:{},feedback:{},finished:false,wrongCards:[],retrying:true};renderPack()}
 function skipWrongPack(){packState.wrongCards=[];packState.retrying=false;renderPack()}
 function renderPack(){
- const box=document.getElementById('packList'),meta=document.getElementById('packMeta'),locked=document.getElementById('packLocked');if(!box)return;const ok=isCSDA();document.querySelector('#pack .card').style.display=ok?'block':'none';locked.style.display=ok?'none':'block';if(!ok)return;
+ const box=document.getElementById('packList'),meta=document.getElementById('packMeta'),locked=document.getElementById('packLocked');if(!box)return;document.querySelector('#pack .card').style.display='block';if(locked)locked.style.display='none';
  const total=packState.cards.length;meta.textContent=total+' cards';
- if(!total){box.innerHTML='<div class="emptyPack">No matching resources yet. Import CS/DA resources, then create a pack.</div>';return}
+ if(!total){box.innerHTML='<div class="emptyPack">No matching resources yet. Import resources for this branch, then create a pack.</div>';return}
  const x=packState.cards[packState.index];
  if(packState.type==='short_notes'){
    box.innerHTML=`<div class="packCard"><div class="packType">SHORT NOTE · ${packState.index+1}/${total} · ${esc(x.subject)}</div><h3>${esc(x.title)}</h3><div class="prettyNote">${renderNoteResource({format:x.format,content:x.content,images:x.images,slides:x.slides})}</div><div class="quizActions"><button class="btn" onclick="packPrev()" ${packState.index===0?'disabled':''}>Previous</button><span class="hint">Short-note revision</span><button class="btn" onclick="packNext()" ${packState.index===total-1?'disabled':''}>Next</button></div></div>`;
@@ -497,7 +497,7 @@ function renderPack(){
 }
 function packPrev(){packState.index=Math.max(0,packState.index-1);renderPack()}
 function packNext(){if(!packState.feedback[packState.index])return;packState.index=Math.min(packState.cards.length-1,packState.index+1);renderPack()}
-function initPack(){if(isCSDA())shufflePack();else renderPack()}
+function initPack(){shufflePack()}
 
 /* Contextual top actions + infographic add panel */
 let infographicFormOpen=false;

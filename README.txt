@@ -1,5 +1,3 @@
-IMA Study — GATE 2027 · v25
-
-Offline/local study planner with multi-course support, visual resource ZIP import/export, PYQ ZIP import/export, PYQ evaluation, bookmarking and revision tabs.
-
-Replace all repository files when deploying to GitHub Pages.
+IMA Study v35
+Tracked Resource/PYQ ZIP packages, topic-aware package lists, colorful lists, and dark/night theme-safe accent text.
+All data is stored locally.

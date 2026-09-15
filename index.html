@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>IMA Study — GATE 2027 · v24</title><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#705bea"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="IMA Study"><link rel="apple-touch-icon" href="./icon-192.png">
+<title>IMA Study — GATE 2027 · v36</title><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#705bea"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="IMA Study"><link rel="apple-touch-icon" href="./icon-192.png">
 <style>
 :root{--bg:#f7f6fc;--card:#fff;--soft:#eeeaff;--ink:#20213a;--muted:#8589a3;--line:#e8e5f2;--a:#705bea;--a2:#a174ff;--pink:#f08ac5;--blue:#63b8f4;--yellow:#f5c85b;--green:#55cfa4;--coral:#ff8f8f;--shadow:0 18px 50px rgba(74,61,145,.12);--r:22px}
 [data-theme=dark]{--bg:#0d0f18;--card:#151827;--soft:#24203e;--ink:#f6f6fb;--muted:#9a9eb5;--line:#292e43;--a:#9078ff;--a2:#b09cff;--pink:#ef91c7;--blue:#5fb7ff;--yellow:#f5c85b;--green:#55d9a8;--coral:#ff8f8f;--shadow:0 18px 55px rgba(0,0,0,.3)}
@@ -10,7 +10,7 @@
 [data-theme=dark] body{background:radial-gradient(circle at 5% 0,#29204d 0,transparent 28%),radial-gradient(circle at 100% 8%,#123744 0,transparent 25%),var(--bg)}
 button,input,textarea,select{font:inherit}button{cursor:pointer}.app{display:grid;grid-template-columns:245px 1fr;min-height:100vh}
 .side{position:sticky;top:0;height:100vh;padding:20px 14px;background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:blur(22px);border-right:1px solid var(--line);z-index:20;transition:.25s}.side.closed{width:70px;padding-inline:9px}.brand{font:700 21px "Space Grotesk",system-ui;padding:7px 11px 23px;white-space:nowrap}.brand b{color:var(--a)}.side.closed .brand{font-size:0}.side.closed .brand:after{content:"I";font:800 22px system-ui;color:var(--a);padding-left:9px}.nav{display:grid;gap:6px}.nav button{border:1px solid transparent;background:transparent;color:var(--muted);padding:12px;border-radius:14px;text-align:left;transition:.2s;white-space:nowrap;overflow:hidden}.nav button:hover,.nav button.active{background:linear-gradient(100deg,var(--soft),rgba(239,145,199,.10));color:var(--a);border-color:#e1dcfb}.nav .ico{display:inline-block;width:25px}.side.closed .nav button{font-size:0;text-align:center}.side.closed .nav .ico{font-size:17px;width:auto}
-.sideTools{position:absolute;bottom:18px;left:14px;right:14px;display:grid;gap:7px}.side.closed .sideTools{left:9px;right:9px}.sideTools button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:10px}.side.closed .sideTools button{font-size:0}.side.closed .sideTools button:first-child:after{content:"☾";font-size:18px}.side.closed .sideTools button:nth-child(2):after{content:"☼";font-size:16px}.side.closed .sideTools button:nth-child(3):after{content:"☰";font-size:16px}
+.sideTools{position:absolute;bottom:18px;left:14px;right:14px;display:grid;gap:7px}.side.closed .sideTools{left:9px;right:9px}.sideTools button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:10px}.side.closed .sideTools button{font-size:0}.side.closed .sideTools button:first-child:after{content:"⇄";font-size:16px}.side.closed .sideTools button:nth-child(2):after{content:"☰";font-size:16px}
 .main{max-width:1350px;width:100%;margin:auto;padding:28px 30px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:21px}.ey{font-size:11px;letter-spacing:1.7px;color:var(--a);font-weight:800}.top h1{margin:5px 0;font:700 31px "Space Grotesk",system-ui}.top p{margin:0;color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 14px;border-radius:12px;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{border:0;color:#fff;background:linear-gradient(135deg,var(--a),var(--a2));font-weight:750;box-shadow:0 9px 25px #705bea33}
 .grid{display:grid;gap:14px}.stats{grid-template-columns:repeat(4,1fr)}.two{grid-template-columns:1.25fr .75fr}.three{grid-template-columns:repeat(3,1fr)}.card{background:color-mix(in srgb,var(--card) 94%,transparent);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);transition:.25s}.card:hover{transform:translateY(-2px)}.stat{overflow:hidden;position:relative}.stat:after{content:"";position:absolute;width:95px;height:95px;right:-35px;top:-35px;border-radius:50%;background:var(--soft)}.stats .stat:nth-child(1){background:linear-gradient(145deg,color-mix(in srgb,var(--card) 92%,#ddd5ff),var(--card))}.stats .stat:nth-child(2){background:linear-gradient(145deg,color-mix(in srgb,var(--card) 92%,#d9f5ff),var(--card))}.stats .stat:nth-child(3){background:linear-gradient(145deg,color-mix(in srgb,var(--card) 92%,#ffe3f1),var(--card))}.stats .stat:nth-child(4){background:linear-gradient(145deg,color-mix(in srgb,var(--card) 92%,#dcf8ed),var(--card))}.stat small{color:var(--muted)}.stat strong{display:block;font-size:29px;margin-top:7px;position:relative;z-index:1}.bar{height:8px;background:#ebeaf3;border-radius:99px;margin-top:12px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--a),var(--pink));transition:1s}.head{display:flex;justify-content:space-between;align-items:center;gap:10px}.head h2{font:600 16px "Space Grotesk";margin:0}.muted,.hint{color:var(--muted)}.hint{font-size:11px;line-height:1.5}.pill,.tag{display:inline-block;padding:5px 9px;border-radius:99px;background:var(--soft);color:var(--a);font-size:10px}.view{display:none}.view.active{display:block}
 .goal{display:grid;grid-template-columns:29px 1fr auto;gap:10px;padding:12px 10px;margin:6px 0;border:1px solid transparent;border-radius:15px;align-items:center;transition:.2s}.goal:last-child{border-bottom:1px solid transparent}.goaltext.done{text-decoration:line-through;color:var(--muted)}.goalmeta{font-size:10px;color:var(--muted);margin-top:5px}.goal.study{background:linear-gradient(135deg,#f1edff,#fbf9ff);border-color:#e4ddff}.goal.practice{background:linear-gradient(135deg,#e8fbf3,#f8fffc);border-color:#d5f2e7}.goal.revision{background:linear-gradient(135deg,#fff0e7,#fffaf6);border-color:#ffe0ce}.goalTypeBadge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:9px;font-weight:900;letter-spacing:.3px;margin-left:5px}.goal.study .goalTypeBadge{background:#ded5ff;color:#604ac7}.goal.practice .goalTypeBadge{background:#ccefe0;color:#217e5d}.goal.revision .goalTypeBadge{background:#ffd9c5;color:#a9552c}.goalDelete{border:0;background:rgba(255,255,255,.65);color:#a7a1b8;width:28px;height:28px;border-radius:9px;font-size:15px;transition:.2s}.goalDelete:hover{background:#ffe7e7;color:#d45d6b}.star{border:0;background:transparent;color:#c4bfd7;font-size:20px;transition:.2s}.star.on{color:#f1b64c;text-shadow:0 0 10px #f1b64c55;transform:scale(1.1)}
@@ -212,6 +212,35 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 [data-theme=dark] .resourceImage,[data-theme=night] .resourceImage{background:rgba(255,255,255,.04)}
 [data-theme=dark] .questionImageWrap,[data-theme=night] .questionImageWrap{background:rgba(255,255,255,.03)}
 @media(max-width:650px){.pyqFilters{grid-template-columns:1fr!important}}
+
+/* v26: visual package manager + colorful lists + theme-safe adaptive accents */
+.packageManager{margin-top:12px;padding:14px;border:1px solid var(--line);border-radius:18px;background:var(--soft)}
+.packageManagerHead{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}.packageManagerHead h3{margin:0}
+.packageList{display:grid;gap:9px}.packageRow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px;border-radius:15px;border:1px solid var(--line);background:var(--card);box-shadow:0 8px 20px rgba(0,0,0,.05);border-left:5px solid var(--package-accent,#705bea)}.packageInfo{min-width:0}.packageName{font-weight:900;color:var(--ink);word-break:break-word}.packageMeta{font-size:11px;color:var(--muted);margin-top:3px}.packageActions{display:flex;gap:6px;flex-shrink:0}.packageDelete{background:#172f57;color:#fff;border:1px solid #2f5b92;border-radius:10px;padding:8px 10px;font-weight:800;cursor:pointer}.packageDelete:hover{filter:brightness(1.1)}
+.resourceItem,.pyqCard,.savedQuestion,.savedNote,.infographicCard,.goal,.plan{transition:background .2s,color .2s,border-color .2s,box-shadow .2s}#resourceList .resourceItem:nth-child(6n+1),#pyqList .pyqCard:nth-child(6n+1){border-left:5px solid #705bea}#resourceList .resourceItem:nth-child(6n+2),#pyqList .pyqCard:nth-child(6n+2){border-left:5px solid #ef5da8}#resourceList .resourceItem:nth-child(6n+3),#pyqList .pyqCard:nth-child(6n+3){border-left:5px solid #00a884}#resourceList .resourceItem:nth-child(6n+4),#pyqList .pyqCard:nth-child(6n+4){border-left:5px solid #3b82f6}#resourceList .resourceItem:nth-child(6n+5),#pyqList .pyqCard:nth-child(6n+5){border-left:5px solid #f59e0b}#resourceList .resourceItem:nth-child(6n),#pyqList .pyqCard:nth-child(6n){border-left:5px solid #ef4444}
+[data-theme=dark] .adaptiveAccent,[data-theme=night] .adaptiveAccent{color:#111!important;background:#ffd36a!important}.adaptiveAccent{color:#111;background:#f5c85b}
+[data-theme=dark] .yellowText,[data-theme=night] .yellowText{color:#111!important}.yellowText{color:#fff}
+
+/* v26.1: package tracking, colorful list cards, and adaptive light/dark accent text */
+#resourceList .resourceItem,#pyqList .pyqCard,#revisionQuestionsList .savedQuestion,#revisionPyqList .savedQuestion,#revisionShortNotesList .savedNote,#revisionInfographicsList .infographicCard,#syllabusList .subject,#weekGoals .goal,#todayGoals .goal{border-left:5px solid var(--list-accent,#705bea)}
+#resourceList .resourceItem:nth-child(6n+1),#pyqList .pyqCard:nth-child(6n+1),#revisionQuestionsList .savedQuestion:nth-child(6n+1),#revisionPyqList .savedQuestion:nth-child(6n+1),#revisionShortNotesList .savedNote:nth-child(6n+1),#revisionInfographicsList .infographicCard:nth-child(6n+1),#syllabusList .subject:nth-child(6n+1),#weekGoals .goal:nth-child(6n+1),#todayGoals .goal:nth-child(6n+1){--list-accent:#705bea}
+#resourceList .resourceItem:nth-child(6n+2),#pyqList .pyqCard:nth-child(6n+2),#revisionQuestionsList .savedQuestion:nth-child(6n+2),#revisionPyqList .savedQuestion:nth-child(6n+2),#revisionShortNotesList .savedNote:nth-child(6n+2),#revisionInfographicsList .infographicCard:nth-child(6n+2),#syllabusList .subject:nth-child(6n+2),#weekGoals .goal:nth-child(6n+2),#todayGoals .goal:nth-child(6n+2){--list-accent:#ef5da8}
+#resourceList .resourceItem:nth-child(6n+3),#pyqList .pyqCard:nth-child(6n+3),#revisionQuestionsList .savedQuestion:nth-child(6n+3),#revisionPyqList .savedQuestion:nth-child(6n+3),#revisionShortNotesList .savedNote:nth-child(6n+3),#revisionInfographicsList .infographicCard:nth-child(6n+3),#syllabusList .subject:nth-child(6n+3),#weekGoals .goal:nth-child(6n+3),#todayGoals .goal:nth-child(6n+3){--list-accent:#00a884}
+#resourceList .resourceItem:nth-child(6n+4),#pyqList .pyqCard:nth-child(6n+4),#revisionQuestionsList .savedQuestion:nth-child(6n+4),#revisionPyqList .savedQuestion:nth-child(6n+4),#revisionShortNotesList .savedNote:nth-child(6n+4),#revisionInfographicsList .infographicCard:nth-child(6n+4),#syllabusList .subject:nth-child(6n+4),#weekGoals .goal:nth-child(6n+4),#todayGoals .goal:nth-child(6n+4){--list-accent:#3b82f6}
+#resourceList .resourceItem:nth-child(6n+5),#pyqList .pyqCard:nth-child(6n+5),#revisionQuestionsList .savedQuestion:nth-child(6n+5),#revisionPyqList .savedQuestion:nth-child(6n+5),#revisionShortNotesList .savedNote:nth-child(6n+5),#revisionInfographicsList .infographicCard:nth-child(6n+5),#syllabusList .subject:nth-child(6n+5),#weekGoals .goal:nth-child(6n+5),#todayGoals .goal:nth-child(6n+5){--list-accent:#f59e0b}
+#resourceList .resourceItem:nth-child(6n),#pyqList .pyqCard:nth-child(6n),#revisionQuestionsList .savedQuestion:nth-child(6n),#revisionPyqList .savedQuestion:nth-child(6n),#revisionShortNotesList .savedNote:nth-child(6n),#revisionInfographicsList .infographicCard:nth-child(6n),#syllabusList .subject:nth-child(6n),#weekGoals .goal:nth-child(6n),#todayGoals .goal:nth-child(6n){--list-accent:#ef4444}
+[data-theme=dark] .shortNoteWrap .prettyNote h2,[data-theme=night] .shortNoteWrap .prettyNote h2{color:#111!important;background:#ffd36a!important;transition:background .2s,color .2s}
+[data-theme=dark] .shortNoteWrap .noteCallout,[data-theme=night] .shortNoteWrap .noteCallout{color:#111!important;background:#ffd36a!important;transition:background .2s,color .2s}
+[data-theme=dark] .prettyNote h3,[data-theme=night] .prettyNote h3{color:#ffd36a!important}
+</style>
+<style id="v36-dark-answer-text">
+[data-theme=dark] .quizOption.correct,[data-theme=night] .quizOption.correct{color:#14532d!important;-webkit-text-fill-color:#14532d!important}
+[data-theme=dark] .quizOption.wrong,[data-theme=night] .quizOption.wrong{color:#7f1d1d!important;-webkit-text-fill-color:#7f1d1d!important}
+[data-theme=dark] .quizFeedback.ok,[data-theme=night] .quizFeedback.ok{color:#14532d!important}
+[data-theme=dark] .quizFeedback.bad,[data-theme=night] .quizFeedback.bad{color:#7f1d1d!important}
+[data-theme=dark] .quizFeedback.ok span,[data-theme=night] .quizFeedback.ok span{color:#14532d!important}
+[data-theme=dark] .quizFeedback.bad span,[data-theme=night] .quizFeedback.bad span{color:#7f1d1d!important}
+.versionTab{width:100%;display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding:13px 15px;border:1px solid var(--line);border-radius:15px;background:var(--soft);color:var(--ink);font-weight:900;cursor:pointer}.packageUpdate{background:var(--soft);color:var(--a);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-weight:800;cursor:pointer}.packageActions{display:flex;gap:6px;flex-shrink:0}
 </style></head>
 <body>
 <div class="app">
@@ -224,7 +253,7 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <button data-v="pyq"><span class="ico">🧠</span> PYQ</button>
 <button data-v="pack"><span class="ico">🎲</span> Revision Pack</button>
 <button data-v="backup"><span class="ico">⇄</span> Backup & Offline</button>
-</nav><div class="sideTools"><button onclick="toggleDark()" id="themeBtn">☾ Dark mode</button><button onclick="toggleNight()" id="nightBtn">☼ Night study mode</button><button onclick="openStreamSwitcher()" class="branchSwitcher">⇄ Switch stream</button><button onclick="toggleSidebar()">☰ Menu</button></div></aside>
+</nav><div class="sideTools"><button onclick="openStreamSwitcher()" class="branchSwitcher">⇄ Switch stream</button><button onclick="toggleSidebar()">☰ Menu</button></div></aside>
 
 <main class="main">
 <header class="top"><div><div class="ey" id="examBranchLabel">GATE 2027 · COMPUTER SCIENCE / DATA SCIENCE</div><h1 id="pageTitle">Your command center.</h1><p>Plan clearly. Revise intelligently. Stay on pace.</p></div><div class="actions" id="topActions"><button class="btn mobileMenu" onclick="toggleMobile()">☰</button></div></header>
@@ -277,7 +306,8 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <select id="resFilterType" onchange="renderResources()"><option value="">All resource types</option><option value="complete_notes">📝 Complete Notes</option><option value="short_notes">⚡ Short Notes</option><option value="slides">🎞️ 2–3 Slide Summary</option><option value="mcq">MCQ</option><option value="msq">MSQ</option><option value="fib">Fill in the Blank</option></select>
 </div>
 <div class="resourceFilterStatus" id="resourceFilterStatus">Showing all resources · Export will include exactly what these filters show.</div>
-<div class="resourceImportInfo"><b>Read-only library:</b> Resources enter IMA Study through a prepared ZIP package containing JSON plus local images. You cannot manually add, edit or delete resources here.</div>
+<div class="resourceImportInfo"><b>Read-only library:</b> Resources enter IMA Study through a prepared ZIP package containing JSON plus local images. You cannot manually add, edit or delete individual resources here.</div>
+<button class="versionTab" onclick="togglePackageManager('resource')">▣ Resource Versions <span id="resourceVersionChevron">＋</span></button><div class="packageManager" id="resourcePackageManager" style="display:none"><div class="packageManagerHead"><div><h3>Resource Versions</h3><div class="hint">Imported ZIP versions for the selected topic.</div></div><span class="pill" id="resourcePackageCount">0 packages</span></div><div id="resourcePackageList"></div></div>
 </div>
 <div class="resourceLibraryHead"><div><h2>Your resources</h2><div class="hint" id="resourceCountHint">0 resources</div></div></div>
 <div id="resourceList"></div>
@@ -295,6 +325,7 @@ background:conic-gradient(var(--a) var(--progress,0%),#e9e8f1 0);position:relati
 <div class="resourceFilters pyqFilters"><select id="pyqFilterSubject" onchange="pyqFilterSubjectChanged()"><option value="">All subjects</option></select><select id="pyqFilterTopic" onchange="renderPYQ()"><option value="">All topics</option></select><select id="pyqFilterYear" onchange="renderPYQ()"><option value="">All years</option></select></div>
 <div class="resourceFilterStatus" id="pyqFilterStatus">Showing all PYQs · Export will include exactly what these filters show.</div>
 <div class="resourceImportInfo"><b>ZIP format:</b> each package contains <code>pyq.json</code> plus an <code>images/</code> folder. Diagram images are embedded locally when imported.</div>
+<button class="versionTab" onclick="togglePackageManager('pyq')">▣ PYQ Versions <span id="pyqVersionChevron">＋</span></button><div class="packageManager" id="pyqPackageManager" style="display:none"><div class="packageManagerHead"><div><h3>PYQ Versions</h3><div class="hint">Imported ZIP versions for the selected topic.</div></div><span class="pill" id="pyqPackageCount">0 packages</span></div><div id="pyqPackageList"></div></div>
 </div>
 <div class="resourceLibraryHead"><div><h2>Your PYQs</h2><div class="hint" id="pyqCountHint">0 questions</div></div></div>
 <div id="pyqList"></div>
@@ -344,7 +375,7 @@ function saveCustomCourses(x){localStorage.setItem(CUSTOM_COURSES_KEY,JSON.strin
 function currentCourseName(){if(profile?.courseName)return profile.courseName;if(currentBranch==='CSDA')return 'CS/DA';if(currentBranch==='ECE')return 'ECE';if(currentBranch==='EE')return 'EE';return currentBranch||'CS/DA'}
 function currentDataset(){return STREAMS[currentBranch]||Object.fromEntries(Object.entries(db?.subjects||{}).map(([s,a])=>[s,(a||[]).map(x=>typeof x==='string'?x:x.title)]))}
 function makeDb(dataset){return {subjects:Object.fromEntries(Object.entries(dataset).map(([s,a])=>[s,a.map(t=>({title:t,done:false}))])),goals:[],plans:[],bookmarks:{},notes:[],resources:[],theme:'light'}}
-function normalizeDb(x,dataset){let d=x&&typeof x==='object'?x:makeDb(dataset);if(!d.subjects)d.subjects={};if(!d.goals)d.goals=[];if(!d.plans)d.plans=[];if(!d.bookmarks)d.bookmarks={};if(!d.notes)d.notes=[];if(!d.resources)d.resources=[];if(!Array.isArray(d.infographics))d.infographics=[];if(!Array.isArray(d.pyqs))d.pyqs=[];if(!d.performance||typeof d.performance!=='object')d.performance={quizAttempts:[],resourceScores:{},packScores:[]};if(!Array.isArray(d.performance.quizAttempts))d.performance.quizAttempts=[];if(!d.performance.resourceScores||typeof d.performance.resourceScores!=='object')d.performance.resourceScores={};if(!Array.isArray(d.performance.packScores))d.performance.packScores=[];if(!Array.isArray(d.performance.pyqAttempts))d.performance.pyqAttempts=[];if(!d.theme)d.theme='light';return d}
+function normalizeDb(x,dataset){let d=x&&typeof x==='object'?x:makeDb(dataset);d.theme=d.theme||'light';if(!d.subjects)d.subjects={};if(!d.goals)d.goals=[];if(!d.plans)d.plans=[];if(!d.bookmarks)d.bookmarks={};if(!d.notes)d.notes=[];if(!d.resources)d.resources=[];if(!Array.isArray(d.resourcePackages))d.resourcePackages=[];if(!Array.isArray(d.infographics))d.infographics=[];if(!Array.isArray(d.pyqs))d.pyqs=[];if(!Array.isArray(d.pyqPackages))d.pyqPackages=[];if(!d.performance||typeof d.performance!=='object')d.performance={quizAttempts:[],resourceScores:{},packScores:[]};if(!Array.isArray(d.performance.quizAttempts))d.performance.quizAttempts=[];if(!d.performance.resourceScores||typeof d.performance.resourceScores!=='object')d.performance.resourceScores={};if(!Array.isArray(d.performance.packScores))d.performance.packScores=[];if(!Array.isArray(d.performance.pyqAttempts))d.performance.pyqAttempts=[];if(!d.theme)d.theme='light';return d}
 // Preserve the previously deployed CS/DA data and move it into its branch-specific store once.
 if(!localStorage.getItem(branchStorageKey('CSDA'))&&localStorage.getItem(LEGACY_KEY)){localStorage.setItem(branchStorageKey('CSDA'),localStorage.getItem(LEGACY_KEY));}
 if(!profile.branch&&localStorage.getItem(branchStorageKey('CSDA'))){profile={exam:'GATE',branch:'CSDA'};localStorage.setItem(PROFILE_KEY,JSON.stringify(profile));}
@@ -367,12 +398,14 @@ function openStreamSwitcher(){document.getElementById('setupOverlay').classList.
 function selectBranch(branch){if(!STREAMS[branch])return;if(currentBranch)localStorage.setItem(K,JSON.stringify(db));currentBranch=branch;profile={exam:'GATE',branch};localStorage.setItem(PROFILE_KEY,JSON.stringify(profile));K=branchStorageKey(branch);db=normalizeDb(JSON.parse(localStorage.getItem(K)||'null'),STREAMS[branch]);document.getElementById('setupOverlay').classList.remove('open');document.getElementById('side').classList.remove('mobileOpen');render()}
 function ensureSetup(){if(!currentBranch){document.getElementById('setupOverlay').classList.add('open');showExamStep()}else{document.getElementById('setupOverlay').classList.remove('open')}}
 function applyTheme(){
- document.documentElement.dataset.theme=db.theme||'light';
+ const theme=db.theme||'light';
+ document.documentElement.dataset.theme=theme;
  const st=STREAMS[currentBranch];
  const label=currentBranch&&String(currentBranch).startsWith('CUSTOM-')?(profile.exam==='GATE'?'GATE 2027 · ':'')+currentCourseName():(st?({CSDA:'GATE 2027 · COMPUTER SCIENCE / DATA SCIENCE',ECE:'GATE 2027 · ELECTRONICS & COMMUNICATION ENGINEERING',EE:'GATE 2027 · ELECTRICAL ENGINEERING'}[currentBranch]):'GATE 2027 · COMPUTER SCIENCE / DATA SCIENCE');
  document.getElementById('examBranchLabel').textContent=label;
- document.getElementById('themeBtn').textContent=db.theme==='dark'?'☀ Light mode':'☾ Dark mode';
- document.getElementById('nightBtn').textContent=db.theme==='night'?'☀ Exit night study':'☼ Night study mode';
+ const tb=document.getElementById('themeBtn'), nb=document.getElementById('nightBtn');
+ if(tb)tb.textContent=theme==='dark'?'☀ Light mode':'☾ Dark mode';
+ if(nb)nb.textContent=theme==='night'?'☀ Exit night study':'☼ Night study mode';
 }
 function toggleDark(){db.theme=db.theme==='dark'?'light':'dark';save()}
 function toggleNight(){db.theme=db.theme==='night'?'light':'night';save()}
@@ -446,25 +479,44 @@ function isCSDA(){return true}
 function resourceTypeLabel(type){return ({complete_notes:'📝 Complete Notes',short_notes:'⚡ Short Notes',slides:'🎞️ 2–3 Slide Summary',mcq:'MCQ',msq:'MSQ',fib:'Fill in the Blank',notes:'📝 Complete Notes'})[type]||String(type||'Resource')}
 function normalizeResource(r){
  const x={...r}; x.id=x.id||uid(); x.subject=x.subject||'General'; x.topic=x.topic||'General'; x.title=x.title||'Untitled resource';
- if(x.kind==='questions'||['mcq','msq','fib'].includes(x.type)) {x.kind='questions';x.type=x.type||'mcq';x.questions=Array.isArray(x.questions)?x.questions:parseQuestionBlocks(x.content||'',x.type)}
- else {x.kind='notes';x.format=x.format||x.type||'complete_notes';x.type=x.format;x.images=Array.isArray(x.images)?x.images:[]}
+ const rawType=String(x.type||x.format||'').trim();
+ const t=rawType.toLowerCase().replace(/[–—]/g,'-').replace(/\s+/g,'_');
+ const typeMap={
+  'complete_notes':'complete_notes','complete_note':'complete_notes','notes':'complete_notes','📝_complete_notes':'complete_notes','complete_notes_':'complete_notes',
+  'short_notes':'short_notes','short_note':'short_notes','⚡_short_notes':'short_notes',
+  '2-3_slide_summary':'slides','2–3_slide_summary':'slides','2-3_slides':'slides','slides':'slides','🎞️_2-3_slide_summary':'slides',
+  'mcq':'mcq','msq':'msq','fib':'fib','fill_in_the_blank':'fib','fill_in_blank':'fib'
+ };
+ const canonical=typeMap[t]||typeMap[t.replace(/^.*?_/, '')]||t;
+ if(x.kind==='questions' || ['mcq','msq','fib'].includes(canonical)){
+   x.kind='questions';
+   const qType=canonical==='mcq'||canonical==='msq'||canonical==='fib'?canonical:String(x.type||'mcq').toLowerCase();
+   x.type=qType;
+   if(Array.isArray(x.questions)) x.questions=x.questions.map(q=>{const z={...q};z.type=String(z.type||qType).toUpperCase();return z;});
+   else if(x.q||x.question){ x.questions=[{...x,type:String(x.type||qType).toUpperCase()}]; }
+   else x.questions=parseQuestionBlocks(x.content||'',qType);
+ } else {
+   x.kind='notes'; x.format=typeMap[t]||x.format||'complete_notes'; x.type=x.format; x.images=Array.isArray(x.images)?x.images:[];
+ }
  return x;
 }
 function resourceSubjectChanged(){}
 function initResourceForm(){initResourceFilters()}
 function initResourceFilters(){
  const s=document.getElementById('resFilterSubject'); if(!s)return;
- const subjects=Object.keys(db.subjects||{});
+ const old=s.value;
+ const subjects=[...new Set((db.resources||[]).map(r=>normalizeResource(r).subject).filter(Boolean))].sort();
  s.innerHTML='<option value="">All subjects</option>'+subjects.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+ if(subjects.includes(old))s.value=old;
  resourceFilterSubjectChanged();
 }
 function resourceFilterSubjectChanged(){
  const s=document.getElementById('resFilterSubject'),t=document.getElementById('resFilterTopic'); if(!s||!t)return;
- const subject=s.value;
- let topics=[];
- if(subject) topics=(db.subjects[subject]||[]).map(x=>x.title);
- else topics=[...new Set((db.resources||[]).map(r=>r.topic).filter(Boolean))];
- t.innerHTML='<option value="">All topics</option>'+topics.sort().map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+ const subject=s.value,old=t.value;
+ const pool=(db.resources||[]).map(normalizeResource).filter(r=>!subject||r.subject===subject);
+ const topics=[...new Set(pool.map(r=>r.topic).filter(Boolean))].sort();
+ t.innerHTML='<option value="">All topics</option>'+topics.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');
+ if(topics.includes(old))t.value=old;
  renderResources();
 }
 function parseNotes(raw){
@@ -555,7 +607,7 @@ function renderResources(){
  document.getElementById('resourceCountHint').textContent=arr.length+' resource'+(arr.length===1?'':'s');
  const fs=document.getElementById('resourceFilterStatus');
  if(fs){const parts=[];if(subject)parts.push('Subject: '+subject);if(topic)parts.push('Topic: '+topic);if(type)parts.push('Type: '+resourceTypeLabel(type));fs.textContent=(parts.length?parts.join(' · '):'All '+currentCourseName()+' resources')+' · Export will include exactly what these filters show.';}
- document.getElementById('resourceList').innerHTML=arr.length?arr.map(resourceCard).join(''):'<div class="resourceEmptyHint">No resources match these filters.<br><br>Import a prepared resource package for this branch to grow your library. 📚</div>';
+ document.getElementById('resourceList').innerHTML=arr.length?arr.map(resourceCard).join(''):'<div class="resourceEmptyHint">No resources match these filters.<br><br>Import a prepared resource package for this branch to grow your library. 📚</div>';renderResourcePackages();
 }
 
 /* v24 Visual ZIP package engine — stored ZIP entries, no external library required. */
@@ -581,19 +633,37 @@ async function exportVisualZip(payload,name){const cloned=JSON.parse(JSON.string
 async function importResourcePackage(file){
  if(!file)return;
  if(!/\.zip$/i.test(file.name||''))return alert('Please select the IMA Study Resource ZIP file.');
- const got=await importVisualZip(file,'resource');if(!got)return;try{
+ const got=await importVisualZip(file,'resource');if(!got)return;
+ try{
   const payload=got.payload,incoming=Array.isArray(payload)?payload:(Array.isArray(payload.resources)?payload.resources:(Array.isArray(payload.data?.resources)?payload.data.resources:null));
   if(!incoming)throw Error('No resources array');
   const hydrated=incoming.map(r=>hydratePackageValue(r,got.files));
-  let added=0,skipped=0,existing=new Set((db.resources||[]).map(r=>`${r.subject||''}|${r.topic||''}|${r.title||''}|${r.type||r.format||''}`));
-  hydrated.map(normalizeResource).forEach(r=>{let key=`${r.subject}|${r.topic}|${r.title}|${r.type||r.format||''}`;if(existing.has(key)){skipped++;return}r.id=uid();db.resources.unshift(r);existing.add(key);added++});
-  save();initResourceFilters();renderResources();renderPack();alert(`Resource ZIP imported.\n\nAdded: ${added}\nSkipped duplicates: ${skipped}`);
- }catch(e){alert('Could not import this resource ZIP. Please check its JSON structure and image paths.')}}
+  const forcedId=document.getElementById('resourcePackageFile')?.dataset.updateId||'';if(forcedId)document.getElementById('resourcePackageFile').dataset.updateId='';const packageId=String(forcedId||payload.packageId||payload.package?.id||file.name.replace(/\.zip$/i,'').trim()||uid());
+  const packageName=String(payload.packageName||payload.package?.name||file.name.replace(/\.zip$/i,'')||'Resource Package');
+  const packageVersion=String(payload.packageVersion||payload.package?.version||payload.version||'1');
+  const packageTopic=String(payload.topic||hydrated.find(x=>x&&x.topic)?.topic||'Multiple topics');
+  const oldIds=new Set((db.resources||[]).filter(r=>String(r._packageId||'')===packageId).map(r=>r.id));
+  db.resources=(db.resources||[]).filter(r=>!oldIds.has(r.id));
+  Object.keys(db.bookmarks||{}).forEach(k=>{if(oldIds.has(db.bookmarks[k]?.resourceId))delete db.bookmarks[k]});
+  if(db.performance?.resourceScores)oldIds.forEach(id=>delete db.performance.resourceScores[id]);
+  const hydratedNorm=hydrated.map(normalizeResource); let added=0; const seen=new Set();
+  hydratedNorm.forEach(r=>{const key=`${r.subject}|${r.topic}|${r.title}|${r.type||r.format||''}`;if(seen.has(key))return;seen.add(key);r.id=uid();r._packageId=packageId;r._packageName=packageName;r._packageVersion=packageVersion;r._packageTopic=packageTopic;r._packageFile=file.name;db.resources.unshift(r);added++});
+  const now=new Date().toISOString();db.resourcePackages=(db.resourcePackages||[]).filter(x=>x.id!==packageId);db.resourcePackages.unshift({id:packageId,name:packageName,version:packageVersion,topic:packageTopic,fileName:file.name,resourceCount:added,updatedAt:now});
+  save();initResourceFilters();renderResources();renderResourcePackages();renderPack();alert(`Resource ZIP imported/updated.\n\nPackage: ${packageName}\nVersion: ${packageVersion}\nTopic: ${packageTopic}\nResources in package: ${added}`);
+ }catch(e){alert('Could not import this resource ZIP. Please check its JSON structure and image paths.')}
+}
+function togglePackageManager(kind){const box=document.getElementById(kind==='resource'?'resourcePackageManager':'pyqPackageManager');const ch=document.getElementById(kind==='resource'?'resourceVersionChevron':'pyqVersionChevron');if(!box)return;const open=box.style.display!=='none';box.style.display=open?'none':'block';if(ch)ch.textContent=open?'＋':'−';if(kind==='resource')renderResourcePackages();else renderPYQPackages()}
+function updateResourcePackage(id){const f=document.getElementById('resourcePackageFile');if(f){f.dataset.updateId=id;f.click()}}
+function updatePYQPackage(id){const f=document.getElementById('pyqPackageFile');if(f){f.dataset.updateId=id;f.click()}}
+function packageAccent(id){const colors=['#705bea','#ef5da8','#00a884','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#14b8a6','#d946ef','#ff6b9a'];let n=0;for(const c of String(id||''))n=(n+c.charCodeAt(0))%colors.length;return colors[n]}
+function renderResourcePackages(){const box=document.getElementById('resourcePackageList'),count=document.getElementById('resourcePackageCount');if(!box)return;const selectedTopic=document.getElementById('resFilterTopic')?.value||'';const list=(db.resourcePackages||[]).filter(p=>!selectedTopic||p.topic===selectedTopic||(db.resources||[]).some(r=>r._packageId===p.id&&r.topic===selectedTopic));if(count)count.textContent=list.length+' package'+(list.length===1?'':'s');box.innerHTML=list.length?'<div class="packageList">'+list.map(p=>`<div class="packageRow" style="--package-accent:${packageAccent(p.id)}"><div class="packageInfo"><div class="packageName">${esc(p.name)}</div><div class="packageMeta">Topic: ${esc(p.topic||'Multiple topics')} · v${esc(p.version||'1')} · ${esc(p.resourceCount||0)} resources · ${esc(p.fileName||'')}</div></div><div class="packageActions"><button class="packageUpdate" onclick="updateResourcePackage('${esc(p.id)}')">Update</button><button class="packageDelete" onclick="removeResourcePackage('${esc(p.id)}')">Remove</button></div></div>`).join('')+'</div>':'<div class="empty">No resource ZIP packages for this topic yet.</div>'}
+function removeResourcePackage(id){const p=(db.resourcePackages||[]).find(x=>x.id===id);if(!p)return;if(!confirm(`Remove the entire package “${p.name}” and all resources belonging to it?`))return;const ids=new Set((db.resources||[]).filter(r=>r._packageId===id).map(r=>r.id));db.resources=(db.resources||[]).filter(r=>r._packageId!==id);Object.keys(db.bookmarks||{}).forEach(k=>{if(ids.has(db.bookmarks[k]?.resourceId))delete db.bookmarks[k]});if(db.performance?.resourceScores)ids.forEach(x=>delete db.performance.resourceScores[x]);db.resourcePackages=(db.resourcePackages||[]).filter(x=>x.id!==id);save();initResourceFilters();renderResources();renderResourcePackages();renderPack();renderResourcePackages()}
+
 async function exportResourcePackage(){
  const subject=document.getElementById('resFilterSubject')?.value||'',topic=document.getElementById('resFilterTopic')?.value||'',type=document.getElementById('resFilterType')?.value||'';
  const resources=(db.resources||[]).map(normalizeResource).filter(r=>(!subject||r.subject===subject)&&(!topic||r.topic===topic)&&(!type||(r.type===type||r.format===type)));
  if(!resources.length)return alert('There are no resources matching the current filters.');
- const payload={app:'IMA Study Visual Resource Package',version:4,exam:profile.exam||'GATE',branch:currentBranch||'CSDA',exportedAt:new Date().toISOString(),filters:{subject:subject||null,topic:topic||null,type:type||null},resources,_jsonFile:'resource.json'};
+ const payload={app:'IMA Study Visual Resource Package',version:5,packageId:'export-'+uid(),packageName:'IMA Study Resource Export',packageVersion:'1',topic:topic||'Multiple topics',exam:profile.exam||'GATE',branch:currentBranch||'CSDA',exportedAt:new Date().toISOString(),filters:{subject:subject||null,topic:topic||null,type:type||null},resources,_jsonFile:'resource.json'};
  await exportVisualZip(payload,'ima-study-'+String(currentBranch||'CSDA').toLowerCase()+'-resources-'+today()+'.zip');
  alert('Resource ZIP export complete.\n\nExported: '+resources.length+' resource'+(resources.length===1?'':'s')+'\nImages were included inside the ZIP.');
 }
@@ -615,8 +685,19 @@ function resetPYQAttempt(){pyqAttempt={answers:{},feedback:{},finished:false};re
 function getFilteredPYQs(){const fs=document.getElementById('pyqFilterSubject')?.value||'',ft=document.getElementById('pyqFilterTopic')?.value||'',fy=document.getElementById('pyqFilterYear')?.value||'';return (db.pyqs||[]).map(normalizePYQ).filter(q=>(!fs||q.subject===fs)&&(!ft||q.topic===ft)&&(!fy||String(q.year)===fy))}
 function pyqQuestionHTML(q,i){q=normalizePYQ(q);const bid=pyqBookmarkId(q.id),saved=!!db.bookmarks[bid],opts=(q.options||[]).map(o=>{const sel=Array.isArray(pyqAttempt.answers[q.id])?pyqAttempt.answers[q.id].includes(o.key):String(pyqAttempt.answers[q.id]||'')===String(o.key);return `<button class="pyqOption ${sel?'selected':''}" onclick="pyqSelected(${i},'${esc(o.key)}')" ${pyqAttempt.finished?'disabled':''}><b>${esc(o.key)}.</b> ${esc(o.text)}</button>`}).join('');const imgs=renderQuestionImages(q);let input='';if(q.type==='NAT'||q.type==='FIB'){input=`<div style="margin-top:12px"><input id="pyqNat-${q.id}" class="quizFIB" inputmode="decimal" placeholder="Enter numerical answer" value="${esc(pyqAttempt.answers[q.id]??'')}" ${pyqAttempt.finished?'disabled':''}><button class="btn primary" style="margin-top:8px" onclick="pyqNatSubmit(${i})" ${pyqAttempt.finished?'disabled':''}>Check answer</button></div>`}const status=pyqAttempt.finished?`<div class="quizFeedback ${pyqAttempt.feedback[q.id]?'ok':'bad'}">${pyqAttempt.feedback[q.id]?'✓ Correct':'✕ Incorrect'} · Correct answer: ${esc(Array.isArray(q.answer)?q.answer.join(', '):q.answer)}</div>`:'';return `<div class="pyqCard"><div class="pyqTop"><span class="pyqTag">${esc(q.exam)}</span>${q.year?`<span class="pyqTag">${esc(q.year)}</span>`:''}<span class="pyqTag">${esc(q.subject)}</span><span class="pyqTag">${esc(q.topic)}</span><span class="pyqTag">${esc(q.type)}</span><span class="pyqTag">${q.marks} mark</span><button class="saveStar ${saved?'on':''}" title="${saved?'Remove bookmark':'Bookmark PYQ'}" onclick="togglePYQBookmark('${q.id}')">★</button></div><div class="pyqQuestion">Q${i+1}. ${esc(q.q||q.question||'')}</div>${imgs}${q.type==='MCQ'||q.type==='MSQ'?`<div class="pyqOptions">${opts}</div>`:''}${input}${status}${pyqAttempt.finished&&q.explain?`<details class="pyqReveal" open><summary>Explanation</summary><div style="margin-top:8px">${esc(q.explain)}</div>${renderExplanationImages(q)}</details>`:''}</div>`}
 function renderPYQ(){const box=document.getElementById('pyqList');if(!box)return;const arr=getFilteredPYQs();const st=document.getElementById('pyqFilterStatus');if(st){const fs=document.getElementById('pyqFilterSubject')?.value||'',ft=document.getElementById('pyqFilterTopic')?.value||'',fy=document.getElementById('pyqFilterYear')?.value||'',p=[];if(fs)p.push('Subject: '+fs);if(ft)p.push('Topic: '+ft);if(fy)p.push('Year: '+fy);st.textContent=(p.length?p.join(' · '):'All PYQs')+' · '+arr.length+' question'+(arr.length===1?'':'s')}const count=document.getElementById('pyqCountHint');if(count)count.textContent=arr.length+' question'+(arr.length===1?'':'s');box.innerHTML=arr.length?`<div class="quizActions"><span class="hint">Answer all questions, then evaluate your score.</span><button class="btn" onclick="resetPYQAttempt()">Reset</button><button class="quizFinish" onclick="finishPYQ()">Evaluate PYQ</button></div>${pyqAttempt.finished&&db.performance.pyqAttempts?.[0]?`<div class="quizScore"><strong>${db.performance.pyqAttempts[0].percentage}%</strong><div>Correct ${db.performance.pyqAttempts[0].correct}/${db.performance.pyqAttempts[0].count} · ${db.performance.pyqAttempts[0].marks}/${db.performance.pyqAttempts[0].total} marks</div></div>`:''}${arr.map((q)=>pyqQuestionHTML(q,(db.pyqs||[]).findIndex(x=>x.id===q.id))).join('')}`:'<div class="resourceEmptyHint">No PYQs match these filters.<br><br>Import a prepared PYQ ZIP package to grow your library. 🧠</div>'}
-async function importPYQPackage(file){if(!file)return;if(!/\.zip$/i.test(file.name||''))return alert('Please select a PYQ ZIP file.');const got=await importVisualZip(file,'pyq');if(!got)return;try{const p=got.payload,incoming=Array.isArray(p)?p:(Array.isArray(p.pyqs)?p.pyqs:(Array.isArray(p.questions)?p.questions:(Array.isArray(p.data?.pyqs)?p.data.pyqs:null)));if(!incoming)throw Error('No PYQ array');const hydrated=incoming.map(q=>hydratePackageValue(q,got.files)).map(normalizePYQ);let added=0,skipped=0,existing=new Set((db.pyqs||[]).map(q=>`${q.year}|${q.subject}|${q.topic}|${q.q||q.question}|${q.type}`));hydrated.forEach(q=>{const key=`${q.year}|${q.subject}|${q.topic}|${q.q||q.question}|${q.type}`;if(existing.has(key)){skipped++;return}db.pyqs.unshift(q);existing.add(key);added++});save();initPYQFilters();alert(`PYQ ZIP imported.\n\nAdded: ${added}\nSkipped duplicates: ${skipped}`)}catch(e){alert('Could not import this PYQ ZIP. Please check its JSON structure and image paths.')}}
-async function exportPYQPackage(){const fs=document.getElementById('pyqFilterSubject')?.value||'',ft=document.getElementById('pyqFilterTopic')?.value||'',fy=document.getElementById('pyqFilterYear')?.value||'';const pyqs=(db.pyqs||[]).map(normalizePYQ).filter(q=>(!fs||q.subject===fs)&&(!ft||q.topic===ft)&&(!fy||String(q.year)===fy));if(!pyqs.length)return alert('There are no PYQs matching the current filters.');const payload={app:'IMA Study PYQ Package',version:1,exam:profile.exam||'GATE',branch:currentBranch||'CSDA',exportedAt:new Date().toISOString(),filters:{subject:fs||null,topic:ft||null,year:fy||null},pyqs,_jsonFile:'pyq.json'};await exportVisualZip(payload,'ima-study-'+String(currentBranch||'CSDA').toLowerCase()+'-pyq-'+today()+'.zip');alert('PYQ ZIP export complete.\n\nExported: '+pyqs.length+' question'+(pyqs.length===1?'':'s')+'\nImages were included inside the ZIP.')}
+async function importPYQPackage(file){
+ if(!file)return;if(!/\.zip$/i.test(file.name||''))return alert('Please select a PYQ ZIP file.');const got=await importVisualZip(file,'pyq');if(!got)return;
+ try{const p=got.payload,incoming=Array.isArray(p)?p:(Array.isArray(p.pyqs)?p.pyqs:(Array.isArray(p.questions)?p.questions:(Array.isArray(p.data?.pyqs)?p.data.pyqs:null)));if(!incoming)throw Error('No PYQ array');
+  const forcedId=document.getElementById('pyqPackageFile')?.dataset.updateId||'';if(forcedId)document.getElementById('pyqPackageFile').dataset.updateId='';const packageId=String(forcedId||p.packageId||p.package?.id||file.name.replace(/\.zip$/i,'').trim()||uid()),packageName=String(p.packageName||p.package?.name||file.name.replace(/\.zip$/i,'')||'PYQ Package'),packageVersion=String(p.packageVersion||p.package?.version||p.version||'1'),packageTopic=String(p.topic||incoming.find(x=>x&&x.topic)?.topic||'Multiple topics');
+  const oldIds=new Set((db.pyqs||[]).filter(q=>String(q._packageId||'')===packageId).map(q=>q.id));db.pyqs=(db.pyqs||[]).filter(q=>!oldIds.has(q.id));Object.keys(db.bookmarks||{}).forEach(k=>{if(oldIds.has(db.bookmarks[k]?.pyqId))delete db.bookmarks[k]});
+  const hydrated=incoming.map(q=>hydratePackageValue(q,got.files)).map(normalizePYQ),seen=new Set();let added=0;hydrated.forEach(q=>{const key=`${q.year}|${q.subject}|${q.topic}|${q.q||q.question}|${q.type}`;if(seen.has(key))return;seen.add(key);q.id=uid();q._packageId=packageId;q._packageName=packageName;q._packageVersion=packageVersion;q._packageTopic=packageTopic;q._packageFile=file.name;db.pyqs.unshift(q);added++});
+  db.pyqPackages=(db.pyqPackages||[]).filter(x=>x.id!==packageId);db.pyqPackages.unshift({id:packageId,name:packageName,version:packageVersion,topic:packageTopic,fileName:file.name,questionCount:added,updatedAt:new Date().toISOString()});save();initPYQFilters();renderPYQ();renderPYQPackages();alert(`PYQ ZIP imported/updated.\n\nPackage: ${packageName}\nVersion: ${packageVersion}\nTopic: ${packageTopic}\nQuestions in package: ${added}`);
+ }catch(e){alert('Could not import this PYQ ZIP. Please check its JSON structure and image paths.')}
+}
+function renderPYQPackages(){const box=document.getElementById('pyqPackageList'),count=document.getElementById('pyqPackageCount');if(!box)return;const selectedTopic=document.getElementById('pyqFilterTopic')?.value||'';const list=(db.pyqPackages||[]).filter(p=>!selectedTopic||p.topic===selectedTopic||(db.pyqs||[]).some(q=>q._packageId===p.id&&q.topic===selectedTopic));if(count)count.textContent=list.length+' package'+(list.length===1?'':'s');box.innerHTML=list.length?'<div class="packageList">'+list.map(p=>`<div class="packageRow" style="--package-accent:${packageAccent(p.id)}"><div class="packageInfo"><div class="packageName">${esc(p.name)}</div><div class="packageMeta">Topic: ${esc(p.topic||'Multiple topics')} · v${esc(p.version||'1')} · ${esc(p.questionCount||0)} PYQs · ${esc(p.fileName||'')}</div></div><div class="packageActions"><button class="packageUpdate" onclick="updatePYQPackage('${esc(p.id)}')">Update</button><button class="packageDelete" onclick="removePYQPackage('${esc(p.id)}')">Remove</button></div></div>`).join('')+'</div>':'<div class="empty">No PYQ ZIP packages for this topic yet.</div>'}
+function removePYQPackage(id){const p=(db.pyqPackages||[]).find(x=>x.id===id);if(!p)return;if(!confirm(`Remove the entire package “${p.name}” and all PYQs belonging to it?`))return;const ids=new Set((db.pyqs||[]).filter(q=>q._packageId===id).map(q=>q.id));db.pyqs=(db.pyqs||[]).filter(q=>q._packageId!==id);Object.keys(db.bookmarks||{}).forEach(k=>{if(ids.has(db.bookmarks[k]?.pyqId))delete db.bookmarks[k]});db.pyqPackages=(db.pyqPackages||[]).filter(x=>x.id!==id);save();initPYQFilters();renderPYQ();renderPYQPackages();renderPYQPackages()}
+
+async function exportPYQPackage(){const fs=document.getElementById('pyqFilterSubject')?.value||'',ft=document.getElementById('pyqFilterTopic')?.value||'',fy=document.getElementById('pyqFilterYear')?.value||'';const pyqs=(db.pyqs||[]).map(normalizePYQ).filter(q=>(!fs||q.subject===fs)&&(!ft||q.topic===ft)&&(!fy||String(q.year)===fy));if(!pyqs.length)return alert('There are no PYQs matching the current filters.');const payload={app:'IMA Study PYQ Package',version:2,packageId:'export-'+uid(),packageName:'IMA Study PYQ Export',packageVersion:'1',topic:ft||'Multiple topics',exam:profile.exam||'GATE',branch:currentBranch||'CSDA',exportedAt:new Date().toISOString(),filters:{subject:fs||null,topic:ft||null,year:fy||null},pyqs,_jsonFile:'pyq.json'};await exportVisualZip(payload,'ima-study-'+String(currentBranch||'CSDA').toLowerCase()+'-pyq-'+today()+'.zip');alert('PYQ ZIP export complete.\n\nExported: '+pyqs.length+' question'+(pyqs.length===1?'':'s')+'\nImages were included inside the ZIP.')}
 let packState={type:'mcq',size:10,cards:[],index:0,answers:{},feedback:{},finished:false,wrongCards:[],retrying:false};
 function shufflePack(){
  const type=document.getElementById('packType')?.value||'mcq',size=+(document.getElementById('packSize')?.value||10);
@@ -805,7 +886,7 @@ function renderTypeProgress(id,goals){
  box.innerHTML=types.map(([label,cls])=>{let arr=goals.filter(g=>(g.type||'Study')===label),done=arr.filter(g=>g.done).length,p=pct(done,arr.length);return `<div class="miniStat ${cls}"><div class="miniRing" style="--progress:${p}%"><b>${p}%</b></div><div class="miniLabel">${label}</div><div class="miniCount">${done}/${arr.length}</div></div>`}).join('');
 }
 
-function render(){applyTheme();renderTopActions();renderDashboard();renderSyllabus();renderPlans();renderRevision();renderResources();initPYQFilters();renderPYQ();renderMonthlyPlan();renderPack();initInfographicForm();initInfographicFilters();renderInfographics();}
+function render(){applyTheme();renderTopActions();renderDashboard();renderSyllabus();renderPlans();renderRevision();renderResources();initPYQFilters();renderPYQ();renderPYQPackages();renderMonthlyPlan();renderPack();initInfographicForm();initInfographicFilters();renderInfographics();}
 
 /* Phase 3 — backup/restore + offline */
 function exportBackup(){
@@ -829,4 +910,4 @@ function updateOnline(){
 window.addEventListener('online',updateOnline);window.addEventListener('offline',updateOnline);
 
 initResourceForm();render();updateOnline();ensureSetup();
-</script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js").catch(()=>{});}</script></body></html>
+</script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js?v=36").catch(()=>{});}</script></body></html>

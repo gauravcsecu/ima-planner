@@ -2,11 +2,9 @@
   "name": "IMA Study — GATE 2027",
   "short_name": "IMA Study",
   "start_url": "./",
-  "scope": "./",
   "display": "standalone",
-  "background_color": "#0f1117",
+  "background_color": "#0d0f18",
   "theme_color": "#705bea",
-  "description": "Local-first study planner and revision tracker for GATE 2027 and multi-stream preparation.",
   "icons": [
     {"src":"./icon-192.png","sizes":"192x192","type":"image/png"},
     {"src":"./icon-512.png","sizes":"512x512","type":"image/png"},

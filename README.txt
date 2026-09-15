@@ -1,27 +1,31 @@
-IMA Study — GATE 2027 v23
+# IMA Study — GATE 2027 · v24
 
-Monthly Plan update:
-- Premium Color 1–10 list replaced by visual color swatches.
-- Repeated Add subject buttons removed from month/week rows.
-- One planning control added below Subject Short Forms:
-  Select Month -> Select Week -> Select Subject Short Form -> Add to Plan.
-- Only months that contain planned subjects are displayed.
-- Month Wise and Month Wise · Week Wise views are retained.
+GitHub Pages / PWA release.
 
-Upload/replace ALL 8 repository files:
-1. index.html
-2. manifest.webmanifest
-3. sw.js
-4. icon-192.png
-5. icon-512.png
-6. icon-512-maskable.png
-7. README.md
-8. README.txt
+## v24 update
+- Resource Library now imports and exports visual ZIP packages.
+- Resource ZIP contains `resource.json` plus local `images/` files.
+- Complete Notes, Short Notes, Slides, MCQs, MSQs and FIB resources can display local images.
+- Diagram/question images and explanation images are supported in quiz cards.
+- Added a dedicated PYQ Library menu with ZIP import/export.
+- PYQ ZIP contains `pyq.json` plus local `images/` files.
+- Imported images are converted to local data URLs and remain available offline.
+- Exported resources/PYQs rebuild image files into the ZIP.
+- Missed Goals now use a dark-blue high-contrast background for dark mode readability.
+- Existing GATE branches, custom courses, Monthly Plan and 30 automatic-color subject tags are preserved.
 
-Important: Commit all files. Then open the GitHub Pages URL. The v23 service worker cache is named ima-study-v23 and removes older IMA Study caches.
+## Visual resource package format
+Resource ZIP:
+- `resource.json`
+- `images/...`
 
+Use image paths such as `images/er-model.png` in resource `images`, slide `images`, question `image`/`images`, or explanation image fields. IMA Study resolves them locally on import.
 
-v23 UI update: improved mobile Full form / Short form alignment and stronger light-theme contrast for Import/Export resource controls.
+## PYQ package format
+PYQ ZIP:
+- `pyq.json`
+- `images/...`
 
+`pyq.json` contains a `pyqs` array. A PYQ can contain `image`, `images`, `explainImage`, or `explainImages` using paths inside the ZIP.
 
-v23: Custom Other Exam / GATE Other Branch course creation; up to 30 monthly-plan subject tags with automatic unique colors.
+All study data remains local in the browser.

@@ -1,36 +1,31 @@
-# IMA Study — GATE 2027 · v23
+# IMA Study — GATE 2027 · v24
 
 GitHub Pages / PWA release.
 
-## v23 UI update
-- Replaced the Premium Color 1–10 text list with visual color swatches.
-- Removed the repeated Add subject controls from every month/week.
-- Added one planning control below Subject Short Forms: Select Month → Select Week → Select Subject Short Form → Add to Plan.
-- Only months containing at least one planned subject are shown.
-- Month Wise and Month Wise · Week Wise views remain available.
-- Existing branch-local study data and Monthly Plan data remain compatible.
+## v24 update
+- Resource Library now imports and exports visual ZIP packages.
+- Resource ZIP contains `resource.json` plus local `images/` files.
+- Complete Notes, Short Notes, Slides, MCQs, MSQs and FIB resources can display local images.
+- Diagram/question images and explanation images are supported in quiz cards.
+- Added a dedicated PYQ Library menu with ZIP import/export.
+- PYQ ZIP contains `pyq.json` plus local `images/` files.
+- Imported images are converted to local data URLs and remain available offline.
+- Exported resources/PYQs rebuild image files into the ZIP.
+- Missed Goals now use a dark-blue high-contrast background for dark mode readability.
+- Existing GATE branches, custom courses, Monthly Plan and 30 automatic-color subject tags are preserved.
 
-## Included files
-- index.html
-- manifest.webmanifest
-- sw.js
-- icon-192.png
-- icon-512.png
-- icon-512-maskable.png
-- README.md
-- README.txt
+## Visual resource package format
+Resource ZIP:
+- `resource.json`
+- `images/...`
 
-## GitHub Pages update
-Replace all existing repository files with all 8 files from this release. Do not upload only `index.html` because the PWA manifest and service worker also need to be updated.
+Use image paths such as `images/er-model.png` in resource `images`, slide `images`, question `image`/`images`, or explanation image fields. IMA Study resolves them locally on import.
 
-After committing, open the GitHub Pages site URL, not the GitHub file viewer. If an installed PWA still shows an older screen, close it and reload the Pages URL so the v23 service worker can replace older IMA Study caches.
+## PYQ package format
+PYQ ZIP:
+- `pyq.json`
+- `images/...`
 
+`pyq.json` contains a `pyqs` array. A PYQ can contain `image`, `images`, `explainImage`, or `explainImages` using paths inside the ZIP.
 
-v23 UI update: improved mobile Full form / Short form alignment and stronger light-theme contrast for Import/Export resource controls.
-
-
-## v23
-- Added custom course setup for Other Exam and GATE Other Branch.
-- Custom courses use separate local storage and start with an empty syllabus.
-- Monthly Plan subject short forms increased to 30.
-- Subject colors are assigned automatically and kept unique.
+All study data remains local in the browser.
